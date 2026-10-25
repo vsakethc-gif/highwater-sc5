@@ -1,0 +1,23 @@
+# Installed libraries (re-created by "npm install")
+node_modules/
+# Build output (re-created by "npm run build")
+dist/
+# Secrets: NEVER commit these
+.env
+.env.*
+!.env.example
+.dev.vars
+*.key
+# Editor / OS clutter
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+# Large raw downloads used by scripts (only small processed files get committed)
+scripts/raw/
+
+# Demo video: raw footage, renders, and big downloads stay local
+video/raw/
+video/out/
+video/public/footage/
+video/whisper.cpp/

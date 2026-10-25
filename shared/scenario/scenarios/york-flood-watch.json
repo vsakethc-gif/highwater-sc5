@@ -1,0 +1,19 @@
+{
+  "id": "york-flood-watch",
+  "title": "Flood Watch before a big rain",
+  "summary": "A slow-moving storm is forecast to drop over 2 inches of rain. NWS issues a Flood Watch. Rivers are still normal. Shows the Watch level.",
+  "county": "45091",
+  "alerts": [
+    {
+      "event": "Flood Watch",
+      "headline": "FLOOD WATCH IN EFFECT FROM THIS EVENING THROUGH SUNDAY MORNING",
+      "description": "SIMULATED ALERT. * WHAT...Flooding caused by excessive rainfall is possible.\n* WHERE...York, Chester, and Lancaster counties.\n* WHEN...From this evening through Sunday morning.\n* IMPACTS...Excessive runoff may result in flooding of rivers, creeks, streams, and other low-lying and flood-prone locations.",
+      "instruction": "SIMULATED. You should monitor later forecasts and be alert for possible Flood Warnings.",
+      "county_fips": ["45091", "45023", "45057"],
+      "startOffsetMin": 120,
+      "endOffsetMin": 2160
+    }
+  ],
+  "gauges": {},
+  "rain": { "next24h_in": 2.6, "next48h_in": 3.3 }
+}

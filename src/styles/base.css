@@ -1,0 +1,121 @@
+/*
+ * base.css — page-wide defaults: reset, fonts, links, focus, layout helpers.
+ * Uses only variables from tokens.css.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: var(--leading-tight);
+  font-weight: var(--weight-semibold);
+}
+
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+a {
+  color: var(--color-accent);
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+/* A clear, consistent focus ring for keyboard users on every interactive element. */
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Data numbers line up in columns (tabular numerals). */
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hidden visually but still read by screen readers. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* "Skip to main content" link: invisible until a keyboard user tabs to it. */
+.skip-link {
+  position: absolute;
+  left: var(--space-1);
+  top: -10rem;
+  z-index: 100;
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-surface);
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+}
+
+.skip-link:focus {
+  top: var(--space-1);
+}
+
+/* Centered column for text pages. */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.prose {
+  max-width: var(--measure);
+}
+
+.prose p + p {
+  margin-top: var(--space-2);
+}
+
+/* Small grey text for "source" and "updated" lines. */
+.meta {
+  font-size: var(--text-sm);
+  color: var(--color-ink-subtle);
+}
+
+/* Icons inherit the text color and sit on the text line. */
+.icon {
+  width: 1.25em;
+  height: 1.25em;
+  flex: none;
+  stroke-width: 2;
+}

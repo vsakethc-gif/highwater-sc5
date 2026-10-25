@@ -1,0 +1,29 @@
+{
+  "id": "lancaster-tornado-warning",
+  "title": "Tornado warning in Lancaster County",
+  "summary": "A storm with rotation moves toward the city of Lancaster. NWS issues a Tornado Warning. Shows why there is no route button for tornadoes: you take shelter instead.",
+  "county": "45057",
+  "alerts": [
+    {
+      "event": "Tornado Warning",
+      "headline": "TORNADO WARNING FOR CENTRAL LANCASTER COUNTY UNTIL 30 MINUTES FROM NOW",
+      "description": "SIMULATED ALERT. At this time, a severe thunderstorm capable of producing a tornado was located near Heath Springs, moving northeast at 30 mph.\n\nHAZARD...Tornado.\nSOURCE...Radar indicated rotation.\nIMPACT...Flying debris will be dangerous to those caught without shelter. Mobile homes will be damaged or destroyed.",
+      "instruction": "SIMULATED. TAKE COVER NOW! Move to a basement or an interior room on the lowest floor of a sturdy building. Avoid windows.",
+      "county_fips": ["45057"],
+      "polygon": [[-80.86, 34.62], [-80.68, 34.66], [-80.70, 34.80], [-80.84, 34.78], [-80.86, 34.62]],
+      "startOffsetMin": -5,
+      "endOffsetMin": 30
+    },
+    {
+      "event": "Tornado Watch",
+      "headline": "TORNADO WATCH IN EFFECT UNTIL 10 PM",
+      "description": "SIMULATED ALERT. Tornado Watch 512 is in effect for Chester, Lancaster, Kershaw, and York counties.",
+      "instruction": "",
+      "county_fips": ["45023", "45057", "45055", "45091"],
+      "startOffsetMin": -90,
+      "endOffsetMin": 240
+    }
+  ],
+  "gauges": {},
+  "rain": { "next24h_in": 0.9, "next48h_in": 1.0 }
+}

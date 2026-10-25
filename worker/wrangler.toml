@@ -1,0 +1,14 @@
+# Cloudflare Worker settings for Highwater (the Worker kept its original name, sc5-ready).
+# Deploy with:  npx wrangler deploy   (from this folder)
+# The ORS key is a secret, set once with:  npx wrangler secret put ORS_API_KEY
+name = "sc5-ready"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+
+# Don't keep request logs: locations pass through and are forgotten.
+[observability]
+enabled = false
+
+[vars]
+ALLOWED_ORIGINS = "https://vsakethc-gif.github.io,http://localhost:5173,http://localhost:4173"
+SUPABASE_URL = "https://nywkprgdvishxicumtvx.supabase.co"

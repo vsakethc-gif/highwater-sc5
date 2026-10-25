@@ -1,0 +1,41 @@
+{
+  "_note": "Real response, router.project-osrm.org, Rock Hill to Lancaster, overview=false.",
+  "code": "Ok",
+  "routes": [
+    {
+      "legs": [
+        {
+          "steps": [],
+          "weight": 1949,
+          "summary": "",
+          "duration": 1949,
+          "distance": 36697.9
+        }
+      ],
+      "weight_name": "routability",
+      "weight": 1949,
+      "duration": 1949,
+      "distance": 36697.9
+    }
+  ],
+  "waypoints": [
+    {
+      "hint": "hJLviYeS74kRAAAADwAAAPEBAABLAAAAk9nmQGFmwkDknCBDcRf6QREAAAAPAAAAgAEAAEsAAACEfwAAG5gr-87hFAJ4mCv7-OEUAgoAfwkAAAAA",
+      "location": [
+        -81.029093,
+        34.922958
+      ],
+      "name": "",
+      "distance": 9.691161418
+    },
+    {
+      "hint": "Jh3Mjf___38JAAAACQAAAI4AAAAmAAAAixtzQAAAAAAEwGtC-Gp_QQkAAAAJAAAAjgAAACYAAACEfwAAwzAu-wTEEQKgLC77AMkRAgoADw8AAAAA",
+      "location": [
+        -80.858941,
+        34.718724
+      ],
+      "name": "",
+      "distance": 171.5977444
+    }
+  ]
+}

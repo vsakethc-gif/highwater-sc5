@@ -1,0 +1,38 @@
+<!doctype html>
+<!--
+  turnstile.html — shows ONLY the Cloudflare "I'm human" check, for the Highwater phone app.
+  The app opens this page in a small web view; when the check passes, the page hands the one-time
+  token to the app, which sends it with the report. The Worker verifies the token with Cloudflare,
+  exactly as it does for the website. Nothing else happens on this page.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Highwater check</title>
+    <style>
+      html, body { margin: 0; padding: 0; background: transparent; }
+      body { display: flex; justify-content: center; align-items: flex-start; min-height: 70px; }
+    </style>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer onload="start()"></script>
+  </head>
+  <body>
+    <div id="check"></div>
+    <script>
+      function send(msg) {
+        if (window.ReactNativeWebView) window.ReactNativeWebView.postMessage(JSON.stringify(msg));
+      }
+      function start() {
+        var theme = new URLSearchParams(location.search).get('theme') === 'dark' ? 'dark' : 'light';
+        window.turnstile.render('#check', {
+          sitekey: '0x4AAAAAAFagqhq5XFjVLuGy',
+          theme: theme,
+          callback: function (token) { send({ type: 'token', token: token }); },
+          'expired-callback': function () { send({ type: 'expired' }); },
+          'error-callback': function () { send({ type: 'error' }); },
+        });
+      }
+    </script>
+  </body>
+</html>

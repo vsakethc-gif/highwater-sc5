@@ -1,0 +1,52 @@
+{
+  "_note": "Real response, api.water.noaa.gov/nwps/v1/gauges/ALIS1, 2026-10-17. Trimmed to fields we use.",
+  "lid": "ALIS1",
+  "usgsId": "021457492",
+  "name": "Allison Creek near York",
+  "county": "York",
+  "state": {
+    "abbreviation": "SC",
+    "name": "South Carolina"
+  },
+  "latitude": 35.065,
+  "longitude": -81.138333333333,
+  "flood": {
+    "categories": {
+      "major": {
+        "stage": 22,
+        "flow": -9999
+      },
+      "moderate": {
+        "stage": 19,
+        "flow": -9999
+      },
+      "minor": {
+        "stage": 14,
+        "flow": -9999
+      },
+      "action": {
+        "stage": 12,
+        "flow": -9999
+      }
+    },
+    "stageUnits": "ft"
+  },
+  "status": {
+    "observed": {
+      "primary": 3.94,
+      "primaryUnit": "ft",
+      "secondary": 0.055,
+      "secondaryUnit": "kcfs",
+      "floodCategory": "no_flooding",
+      "validTime": "2026-10-17T22:30:00Z"
+    },
+    "forecast": {
+      "primary": -999,
+      "primaryUnit": "",
+      "secondary": -999,
+      "secondaryUnit": "",
+      "floodCategory": "fcst_not_current",
+      "validTime": "0001-01-01T00:00:00Z"
+    }
+  }
+}

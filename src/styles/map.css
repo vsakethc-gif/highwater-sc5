@@ -1,0 +1,270 @@
+/*
+ * map.css — the district map screen. Loaded only with the map page.
+ * Uses only variables from tokens.css.
+ */
+
+.map-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.map-canvas {
+  height: 62vh;
+  min-height: 22rem;
+  background: var(--color-surface-sunken);
+}
+
+.map-panel {
+  padding: var(--space-2) var(--gutter);
+  border-bottom: var(--border-width) solid var(--color-border);
+  background: var(--color-surface);
+}
+
+@media (min-width: 64rem) {
+  .map-layout {
+    flex-direction: row;
+    height: calc(100vh - 4rem);
+    min-height: 34rem;
+  }
+
+  .map-canvas {
+    flex: 1;
+    height: auto;
+  }
+
+  .map-panel {
+    width: 24rem;
+    overflow-y: auto;
+    border-bottom: 0;
+    border-left: var(--border-width) solid var(--color-border);
+  }
+}
+
+.map-panel__title {
+  font-size: var(--text-xl);
+}
+
+.map-panel > * + * {
+  margin-top: var(--space-2);
+}
+
+/* Segmented control: radio buttons styled as a row of buttons */
+.segmented {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-0);
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.segmented legend {
+  grid-column: 1 / -1;
+}
+
+.segmented__item {
+  position: relative;
+}
+
+.segmented__item input {
+  position: absolute;
+  opacity: 0;
+}
+
+.segmented__item label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--tap-target);
+  padding: 0 var(--space-1);
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  cursor: pointer;
+}
+
+.segmented__item label:hover {
+  border-color: var(--color-ink-muted);
+}
+
+.segmented__item input:checked + label {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+.segmented__item input:focus-visible + label {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.check-group {
+  display: grid;
+  gap: var(--space-0);
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  min-height: var(--tap-target);
+}
+
+.check input {
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: var(--color-accent);
+}
+
+/* Legend */
+.legend {
+  display: grid;
+  gap: var(--space-2);
+  padding-top: var(--space-2);
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.legend__title {
+  margin-bottom: var(--space-0);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+}
+
+.legend__list {
+  display: grid;
+  gap: var(--space-0);
+  padding: 0;
+  list-style: none;
+  font-size: var(--text-sm);
+}
+
+.legend__list li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.legend__swatch {
+  width: 1.5rem;
+  height: 1rem;
+  flex: none;
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: 2px;
+}
+
+.legend__swatch--dashed {
+  border: 3px dashed var(--color-ink-muted);
+  background: transparent;
+}
+
+.legend__symbol {
+  width: 22px;
+  height: 22px;
+  flex: none;
+}
+
+.legend__line {
+  width: 1.5rem;
+  height: 0;
+  flex: none;
+  border-top: 2px solid var(--color-ink);
+}
+
+/* Tract detail panel */
+.tract-panel {
+  padding: var(--space-2);
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--elevation-1);
+}
+
+.tract-panel:focus {
+  outline: none;
+}
+
+.tract-panel:focus-visible {
+  outline: 3px solid var(--color-focus);
+}
+
+.tract-panel__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-1);
+}
+
+.tract-panel__head .subsection-title {
+  margin: 0;
+}
+
+.tract-panel > * + * {
+  margin-top: var(--space-1);
+}
+
+.tract-panel .stat__value {
+  font-size: var(--text-xl);
+}
+
+.tract-panel__level {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-sm);
+}
+
+.panel__close {
+  min-width: var(--tap-target);
+}
+
+/* Gauge popup */
+.popup {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+}
+
+.popup__title {
+  padding-right: var(--space-2);
+  font-weight: var(--weight-semibold);
+}
+
+/* Tract list (text version of the map) */
+.tract-list ul {
+  max-height: 28rem;
+  margin: 0;
+  padding: 0 var(--space-1) var(--space-1);
+  list-style: none;
+  overflow-y: auto;
+}
+
+.tract-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  width: 100%;
+  min-height: var(--tap-target);
+  padding: 0 var(--space-1);
+  border: 0;
+  border-bottom: var(--border-width) solid var(--color-border);
+  background: transparent;
+  color: var(--color-ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tract-list__item:hover {
+  background: var(--color-accent-tint);
+}
+
+.legend__report {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  border: 1.5px solid var(--color-ink);
+  border-radius: 50%;
+  background: var(--status-watch-border);
+}

@@ -1,0 +1,23 @@
+{
+  "id": "york-flood-warning",
+  "title": "River flood warning in York County",
+  "summary": "Days of heavy rain push the Catawba River above flood stage near Rock Hill. NWS issues a Flood Warning. Shows the Warning level.",
+  "county": "45091",
+  "alerts": [
+    {
+      "event": "Flood Warning",
+      "headline": "FLOOD WARNING FOR THE CATAWBA RIVER NEAR ROCK HILL",
+      "description": "SIMULATED ALERT. ...The Flood Warning is in effect for the Catawba River near Rock Hill.\n\n* WHAT...Minor flooding is occurring and is forecast to continue.\n* WHERE...Catawba River near Rock Hill.\n* WHEN...Until further notice.\n* IMPACTS...At 15 feet, water covers low parts of River Park and nearby trails.",
+      "instruction": "SIMULATED. Turn around, don't drown when encountering flooded roads. Most flood deaths occur in vehicles.",
+      "county_fips": ["45091"],
+      "startOffsetMin": -120,
+      "endOffsetMin": 1440
+    }
+  ],
+  "gauges": {
+    "02146000": { "from": 9.2, "to": 16.4 },
+    "021473415": { "from": 7.9, "to": 11.2 },
+    "02147020": { "from": 14.1, "to": 19.6 }
+  },
+  "rain": { "next24h_in": 1.8, "next48h_in": 2.6 }
+}

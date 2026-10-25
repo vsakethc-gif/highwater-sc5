@@ -1,0 +1,144 @@
+/*
+ * tokens.css — the design system's named values ("design tokens").
+ *
+ * Every other stylesheet uses ONLY these variables, never raw colors or sizes.
+ * That keeps the whole app consistent, and lets us change the look in one place.
+ *
+ * Direction: a calm civic-data publication. Warm paper background, near-black
+ * ink with a slight blue cast, cool grays, and one deep water-blue accent.
+ */
+
+:root {
+  /* ---------- Color: surfaces and ink ---------- */
+  --color-bg: #faf8f4;            /* warm off-white "paper" */
+  --color-surface: #ffffff;       /* cards and panels sit slightly brighter than the page */
+  --color-surface-sunken: #f2efe9;/* wells, code, table stripes */
+  --color-ink: #14202b;           /* main text: near-black with a blue cast */
+  --color-ink-muted: #505c67;     /* secondary text (meets WCAG AA on bg and surface) */
+  --color-ink-subtle: #606b75;    /* meta text (AA on bg, surface and sunken) */
+  --color-border: #d6dadf;        /* 1px hairlines */
+  --color-border-strong: #a9b1b9; /* input borders, dividers that must be seen */
+
+  /* ---------- Color: the single accent (deep water blue) ---------- */
+  --color-accent: #0b4f7c;
+  --color-accent-hover: #083d61;
+  --color-accent-tint: #e5eef5;
+  --color-on-accent: #ffffff;     /* text on accent-colored buttons */
+  --color-focus: #0b4f7c;         /* focus rings */
+
+  /*
+   * ---------- Color: the four status levels ----------
+   * Each level is ALWAYS shown with an icon + a text label, never color alone.
+   * They also differ in style, so they can be told apart without color vision:
+   *   Normal  = outlined,   check icon
+   *   Watch   = tinted,     eye icon
+   *   Warning = solid fill, triangle icon
+   *   Danger  = solid dark fill, octagon icon
+   * "fg" is the text/icon color to use on top of "bg".
+   */
+  --status-normal-bg: #eaf3ee;
+  --status-normal-fg: #1f5c43;
+  --status-normal-border: #5f9179;
+
+  --status-watch-bg: #fdf1cf;
+  --status-watch-fg: #6e4c00;
+  --status-watch-border: #a8831a;
+
+  --status-warning-bg: #b54708;
+  --status-warning-fg: #ffffff;
+  --status-warning-border: #b54708;
+
+  --status-danger-bg: #7a0e2a;
+  --status-danger-fg: #ffffff;
+  --status-danger-border: #7a0e2a;
+
+  /* Light washes of each level for the big status card (body text stays ink, AA on all four). */
+  --status-normal-tint: #f1f7f3;
+  --status-watch-tint: #fdf4d9;
+  --status-warning-tint: #fcefe6;
+  --status-danger-tint: #faebef;
+
+  /*
+   * Map scale for tract scores (0–100), light = low, dark = high.
+   * ColorBrewer YlGnBu: ordered by lightness, readable with color-vision differences,
+   * and distinct from the four status colors.
+   */
+  --ramp-1: #ffffcc;
+  --ramp-2: #a1dab4;
+  --ramp-3: #41b6c4;
+  --ramp-4: #2c7fb8;
+  --ramp-5: #253494;
+  --ramp-none: #d6dadf;           /* insufficient data */
+
+  /* Banners that are not status levels */
+  --banner-sim-bg: #14202b;       /* Scenario Mode: unmistakable dark bar */
+  --banner-sim-fg: #ffffff;
+  --banner-info-bg: var(--color-accent-tint);
+  --banner-info-fg: var(--color-ink);
+  --color-backdrop: rgba(20, 32, 43, 0.45); /* dims the page behind dialogs */
+
+  /* ---------- Typography ---------- */
+  /* Public Sans: the U.S. government's open-source typeface. Very legible, has tabular numbers. */
+  --font-sans: 'Public Sans Variable', 'Public Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  /* Source Serif 4: used only for long-form headings on text pages. */
+  --font-serif: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, 'Times New Roman', serif;
+
+  /* Type scale (px → rem, base 16px): 12 / 14 / 16 / 18 / 24 / 32 / 44 */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.75rem;
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --measure: 68ch;                /* comfortable prose line length (60–75 characters) */
+
+  /* ---------- Spacing: 8px grid (with a 4px half-step) ---------- */
+  --space-0: 0.25rem;  /* 4  */
+  --space-1: 0.5rem;   /* 8  */
+  --space-2: 1rem;     /* 16 */
+  --space-3: 1.5rem;   /* 24 */
+  --space-4: 2rem;     /* 32 */
+  --space-5: 3rem;     /* 48 */
+  --space-6: 4rem;     /* 64 */
+
+  /* ---------- Layout ---------- */
+  --max-width: 70rem;             /* 1120px for text pages; the map is full-bleed */
+  --gutter: var(--space-2);
+  --tap-target: 2.75rem;          /* 44px minimum touch target */
+
+  /* ---------- Surfaces: flat, hairlines instead of shadows ---------- */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --border-width: 1px;
+  /* Only two elevation levels, used for popovers and panels that float over the map. */
+  --elevation-1: 0 1px 2px rgba(20, 32, 43, 0.08);
+  --elevation-2: 0 4px 12px rgba(20, 32, 43, 0.12);
+
+  /* ---------- Motion: minimal and quick ---------- */
+  --duration-fast: 120ms;
+  --duration-base: 180ms;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --gutter: var(--space-3);
+  }
+}
+
+/* People who ask their device for less motion get none. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+  }
+}

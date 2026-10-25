@@ -1,0 +1,623 @@
+{
+  "_note": "Real response, api.weather.gov/alerts/active?area=SC, 2026-10-17 ~6:55pm EDT. Lake Wind Advisory covers Fairfield, Kershaw, Lancaster, Lee. Long text trimmed.",
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bd5b7c944fa229194e8c2b689eebe713dd65f805.002.1",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bd5b7c944fa229194e8c2b689eebe713dd65f805.002.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.bd5b7c944fa229194e8c2b689eebe713dd65f805.002.1",
+        "areaDesc": "Beaufort; Coastal Colleton; Charleston; Coastal Jasper",
+        "geocode": {
+          "SAME": [
+            "045013",
+            "045029",
+            "045019",
+            "045053"
+          ],
+          "UGC": [
+            "SCZ148",
+            "SCZ149",
+            "SCZ150",
+            "SCZ151"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/forecast/SCZ148",
+          "https://api.weather.gov/zones/forecast/SCZ149",
+          "https://api.weather.gov/zones/forecast/SCZ150",
+          "https://api.weather.gov/zones/forecast/SCZ151"
+        ],
+        "references": [],
+        "sent": "2026-10-17T18:34:00-04:00",
+        "effective": "2026-10-17T18:34:00-04:00",
+        "onset": "2026-10-18T08:00:00-04:00",
+        "expires": "2026-10-18T02:45:00-04:00",
+        "ends": "2026-10-18T20:00:00-04:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Moderate",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Rip Current Statement",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Charleston SC",
+        "headline": "Rip Current Statement issued October 17 at 6:34PM EDT until October 18 at 8:00PM EDT by NWS Charleston SC",
+        "description": "* WHAT...Dangerous rip currents expected.\n\n* WHERE...South Carolina Beaches.\n\n* WHEN...From Sunday morning through Sunday evening.\n\n* IMPACTS...Rip currents can sweep even the best swimmers away\nfrom shore into deeper water.",
+        "instruction": "Swim near a lifeguard. If caught in a rip current, relax and\nfloat. Don't swim against the current. If able, swim in a\ndirection following the shoreline. If unable to escape, face the\nshore and call or wave for help.",
+        "response": "Avoid",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "CFWCHS"
+          ],
+          "WMOidentifier": [
+            "WHUS42 KCHS 172234"
+          ],
+          "NWSheadline": [
+            "HIGH RIP CURRENT RISK IN EFFECT FROM SUNDAY MORNING THROUGH SUNDAY EVENING"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "VTEC": [
+            "/O.NEW.KCHS.RP.S.0012.261018T1200Z-261019T0000Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-18T20:00:00-04:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "NWS"
+          ],
+          "NationalWeatherService": [
+            "RPS"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.669d94349c2e94a3177b195cd67972ba8c558f8f.001.1",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.669d94349c2e94a3177b195cd67972ba8c558f8f.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.669d94349c2e94a3177b195cd67972ba8c558f8f.001.1",
+        "areaDesc": "Inland Berkeley",
+        "geocode": {
+          "SAME": [
+            "045015"
+          ],
+          "UGC": [
+            "SCZ045"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/forecast/SCZ045"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.02b40f71053b80992ff7b3bd4f67f91d4f7a5fcc.001.1",
+            "identifier": "urn:oid:2.49.0.1.840.0.02b40f71053b80992ff7b3bd4f67f91d4f7a5fcc.001.1",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-17T02:21:00-04:00"
+          }
+        ],
+        "sent": "2026-10-17T14:14:00-04:00",
+        "effective": "2026-10-17T14:14:00-04:00",
+        "onset": "2026-10-17T14:14:00-04:00",
+        "expires": "2026-10-17T23:00:00-04:00",
+        "ends": "2026-10-19T02:00:00-04:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Moderate",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Lake Wind Advisory",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Charleston SC",
+        "headline": "Lake Wind Advisory issued October 17 at 2:14PM EDT until October 19 at 2:00AM EDT by NWS Charleston SC",
+        "description": "* WHAT...Northeast winds 20 to 25 knots with gusts up to 30 knots and\nwaves 2 to 3 feet on Lake Moultrie.\n\n* WHERE...Lake Moultrie.\n\n* WHEN...Until 2 AM EDT Monday.\n\n* IMPACTS...Strong winds and rough waves on Lake Moultrie will create\nhazardous conditions for small craft.",
+        "instruction": "Boaters on Lake Moultrie should use extra caution since strong winds\nand rough waves can overturn small craft.",
+        "response": "Execute",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "NPWCHS"
+          ],
+          "WMOidentifier": [
+            "WWUS72 KCHS 171814"
+          ],
+          "NWSheadline": [
+            "LAKE WIND ADVISORY REMAINS IN EFFECT UNTIL 2 AM EDT MONDAY ON LAKE MOULTRIE"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "VTEC": [
+            "/O.CON.KCHS.LW.Y.0017.000000T0000Z-261019T0600Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-19T02:00:00-04:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "NWS"
+          ],
+          "NationalWeatherService": [
+            "LWY"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.78a8576e330d4827bd578b71025a8fbc7ad0eb43.002.1",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.78a8576e330d4827bd578b71025a8fbc7ad0eb43.002.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.78a8576e330d4827bd578b71025a8fbc7ad0eb43.002.1",
+        "areaDesc": "Rabun; Habersham; Alexander; Transylvania; Henderson; Caldwell Mountains; Greater Caldwell; Burke Mountains; Greater Burke; McDowell Mountains; Eastern McDowell; Rutherford Mountains; Polk Mountains; Oconee Mountains; Pickens Mountains; Greenville Mountains",
+        "geocode": {
+          "SAME": [
+            "013241",
+            "013137",
+            "037003",
+            "037175",
+            "037089",
+            "037027",
+            "037023",
+            "037111",
+            "037161",
+            "037149",
+            "045073",
+            "045077",
+            "045045"
+          ],
+          "UGC": [
+            "GAZ010",
+            "GAZ017",
+            "NCZ035",
+            "NCZ064",
+            "NCZ065",
+            "NCZ501",
+            "NCZ502",
+            "NCZ503",
+            "NCZ504",
+            "NCZ505",
+            "NCZ506",
+            "NCZ507",
+            "NCZ509",
+            "SCZ101",
+            "SCZ102",
+            "SCZ103"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/forecast/GAZ010",
+          "https://api.weather.gov/zones/forecast/GAZ017",
+          "https://api.weather.gov/zones/forecast/NCZ035",
+          "https://api.weather.gov/zones/forecast/NCZ064",
+          "https://api.weather.gov/zones/forecast/NCZ065",
+          "https://api.weather.gov/zones/forecast/NCZ501",
+          "https://api.weather.gov/zones/forecast/NCZ502",
+          "https://api.weather.gov/zones/forecast/NCZ503",
+          "https://api.weather.gov/zones/forecast/NCZ504",
+          "https://api.weather.gov/zones/forecast/NCZ505",
+          "https://api.weather.gov/zones/forecast/NCZ506",
+          "https://api.weather.gov/zones/forecast/NCZ507",
+          "https://api.weather.gov/zones/forecast/NCZ509",
+          "https://api.weather.gov/zones/forecast/SCZ101",
+          "https://api.weather.gov/zones/forecast/SCZ102",
+          "https://api.weather.gov/zones/forecast/SCZ103"
+        ],
+        "references": [],
+        "sent": "2026-10-17T13:54:00-04:00",
+        "effective": "2026-10-17T13:54:00-04:00",
+        "onset": "2026-10-18T01:00:00-04:00",
+        "expires": "2026-10-17T23:00:00-04:00",
+        "ends": "2026-10-18T09:00:00-04:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Minor",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Frost Advisory",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Greenville-Spartanburg SC",
+        "headline": "Frost Advisory issued October 17 at 1:54PM EDT until October 18 at 9:00AM EDT by NWS Greenville-Spartanburg SC",
+        "description": "* WHAT...Temperatures as low as 35 will result in frost formation.\n\n* WHERE...Portions of northeast Georgia, the foothills of North\nCarolina, and the South Carolina mountains.\n\n* WHEN...From 1 AM to 9 AM EDT Sunday.\n\n* IMPACTS...Frost could harm sensitive outdoor vegetation. Sensitive\noutdoor plants may be killed if left uncovered.",
+        "instruction": "Take steps now to protect tender plants from the cold.",
+        "response": "Prepare",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "NPWGSP"
+          ],
+          "WMOidentifier": [
+            "WWUS72 KGSP 171754"
+          ],
+          "NWSheadline": [
+            "FROST ADVISORY REMAINS IN EFFECT FROM 1 AM TO 9 AM EDT SUNDAY"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "VTEC": [
+            "/O.CON.KGSP.FR.Y.0004.261018T0500Z-261018T1300Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-18T09:00:00-04:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "NWS"
+          ],
+          "NationalWeatherService": [
+            "FRY"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b54840dd5262b2ef8123e39bb7b1fe51b3de05d0.001.1",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b54840dd5262b2ef8123e39bb7b1fe51b3de05d0.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.b54840dd5262b2ef8123e39bb7b1fe51b3de05d0.001.1",
+        "areaDesc": "Lincoln; McDuffie; Columbia; Richmond; Burke; Chesterfield; McCormick; Newberry; Fairfield; Kershaw; Edgefield; Saluda; Lexington; Richland; Lee; Aiken; Sumter; Barnwell; Calhoun; Clarendon; Bamberg; Northern Lancaster; Southern Lancaster; Northwestern Orangeburg; Central Orangeburg; Southeastern Orangeburg",
+        "geocode": {
+          "SAME": [
+            "013181",
+            "013189",
+            "013073",
+            "013245",
+            "013033",
+            "045025",
+            "045065",
+            "045071",
+            "045039",
+            "045055",
+            "045037",
+            "045081",
+            "045063",
+            "045079",
+            "045061",
+            "045003",
+            "045085",
+            "045011",
+            "045017",
+            "045027",
+            "045009",
+            "045057",
+            "045075"
+          ],
+          "UGC": [
+            "GAZ040",
+            "GAZ063",
+            "GAZ064",
+            "GAZ065",
+            "GAZ077",
+            "SCZ016",
+            "SCZ018",
+            "SCZ020",
+            "SCZ021",
+            "SCZ022",
+            "SCZ025",
+            "SCZ026",
+            "SCZ027",
+            "SCZ028",
+            "SCZ029",
+            "SCZ030",
+            "SCZ031",
+            "SCZ035",
+            "SCZ037",
+            "SCZ038",
+            "SCZ041",
+            "SCZ115",
+            "SCZ116",
+            "SCZ135",
+            "SCZ136",
+            "SCZ137"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/forecast/GAZ040",
+          "https://api.weather.gov/zones/forecast/GAZ063",
+          "https://api.weather.gov/zones/forecast/GAZ064",
+          "https://api.weather.gov/zones/forecast/GAZ065",
+          "https://api.weather.gov/zones/forecast/GAZ077",
+          "https://api.weather.gov/zones/forecast/SCZ016",
+          "https://api.weather.gov/zones/forecast/SCZ018",
+          "https://api.weather.gov/zones/forecast/SCZ020",
+          "https://api.weather.gov/zones/forecast/SCZ021",
+          "https://api.weather.gov/zones/forecast/SCZ022",
+          "https://api.weather.gov/zones/forecast/SCZ025",
+          "https://api.weather.gov/zones/forecast/SCZ026",
+          "https://api.weather.gov/zones/forecast/SCZ027",
+          "https://api.weather.gov/zones/forecast/SCZ028",
+          "https://api.weather.gov/zones/forecast/SCZ029",
+          "https://api.weather.gov/zones/forecast/SCZ030",
+          "https://api.weather.gov/zones/forecast/SCZ031",
+          "https://api.weather.gov/zones/forecast/SCZ035",
+          "https://api.weather.gov/zones/forecast/SCZ037",
+          "https://api.weather.gov/zones/forecast/SCZ038",
+          "https://api.weather.gov/zones/forecast/SCZ041",
+          "https://api.weather.gov/zones/forecast/SCZ115",
+          "https://api.weather.gov/zones/forecast/SCZ116",
+          "https://api.weather.gov/zones/forecast/SCZ135",
+          "https://api.weather.gov/zones/forecast/SCZ136",
+          "https://api.weather.gov/zones/forecast/SCZ137"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.abc30b852db899e75afb91f326f74a537cc8b61a.001.1",
+            "identifier": "urn:oid:2.49.0.1.840.0.abc30b852db899e75afb91f326f74a537cc8b61a.001.1",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-17T02:32:00-04:00"
+          }
+        ],
+        "sent": "2026-10-17T12:28:00-04:00",
+        "effective": "2026-10-17T12:28:00-04:00",
+        "onset": "2026-10-17T12:28:00-04:00",
+        "expires": "2026-10-18T08:00:00-04:00",
+        "ends": "2026-10-18T20:00:00-04:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Moderate",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Lake Wind Advisory",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Columbia SC",
+        "headline": "Lake Wind Advisory issued October 17 at 12:28PM EDT until October 18 at 8:00PM EDT by NWS Columbia SC",
+        "description": "* WHAT...North winds 10 to 20 mph with gusts up to 35 mph possible.\n\n* WHERE...Portions of east central Georgia and central South\nCarolina.\n\n* WHEN...Until 8 PM EDT Sunday.\n\n* IMPACTS...Strong winds and rough waves on area lakes will create\nhazardous conditions for small craft.",
+        "instruction": "Boaters on area lakes should use extra caution since strong winds and\nrough waves can overturn small craft.",
+        "response": "Execute",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "NPWCAE"
+          ],
+          "WMOidentifier": [
+            "WWUS72 KCAE 171628"
+          ],
+          "NWSheadline": [
+            "LAKE WIND ADVISORY REMAINS IN EFFECT UNTIL 8 PM EDT SUNDAY"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "VTEC": [
+            "/O.CON.KCAE.LW.Y.0012.000000T0000Z-261019T0000Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-18T20:00:00-04:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "NWS"
+          ],
+          "NationalWeatherService": [
+            "LWY"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7715b1d01cc85546b6d9d78de08c64ce03224f50.001.1",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7715b1d01cc85546b6d9d78de08c64ce03224f50.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.7715b1d01cc85546b6d9d78de08c64ce03224f50.001.1",
+        "areaDesc": "Coastal New Hanover; Coastal Georgetown",
+        "geocode": {
+          "SAME": [
+            "037129",
+            "045043"
+          ],
+          "UGC": [
+            "NCZ108",
+            "SCZ056"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/forecast/NCZ108",
+          "https://api.weather.gov/zones/forecast/SCZ056"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.45f94669be860b15357e9c9af45fe7909ac0d863.001.1",
+            "identifier": "urn:oid:2.49.0.1.840.0.45f94669be860b15357e9c9af45fe7909ac0d863.001.1",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-17T03:02:00-04:00"
+          }
+        ],
+        "sent": "2026-10-17T11:02:00-04:00",
+        "effective": "2026-10-17T11:02:00-04:00",
+        "onset": "2026-10-17T11:02:00-04:00",
+        "expires": "2026-10-17T20:00:00-04:00",
+        "ends": "2026-10-17T20:00:00-04:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Moderate",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Beach Hazards Statement",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Wilmington NC",
+        "headline": "Beach Hazards Statement issued October 17 at 11:02AM EDT until October 17 at 8:00PM EDT by NWS Wilmington NC",
+        "description": "* WHAT...Strong north to south longshore current.\n\n* WHERE...In North Carolina, Coastal New Hanover County. In\nSouth Carolina, Coastal Georgetown County.\n\n* WHEN...Today.\n\n* IMPACTS...Longshore currents can sweep swimmers and surfers\ninto rip currents, piers, jetties, and other hazardous areas.\nIt may sweep swimmers off their feet, making it difficult to\nreturn to shore.",
+        "instruction": "Caution should be used when in or near the water. Check with\nlifeguards before entering the ocean for possible hazards you may\nbe swept into.",
+        "response": "Avoid",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "CFWILM"
+          ],
+          "WMOidentifier": [
+            "WHUS42 KILM 171502"
+          ],
+          "NWSheadline": [
+            "BEACH HAZARDS STATEMENT REMAINS IN EFFECT UNTIL 8 PM EDT THIS EVENING"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "VTEC": [
+            "/O.CON.KILM.BH.S.0054.000000T0000Z-261018T0000Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-17T20:00:00-04:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "NWS"
+          ],
+          "NationalWeatherService": [
+            "BHS"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d6146603ed68c1bf7a511304c208a89e5c61ef5.001.1",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d6146603ed68c1bf7a511304c208a89e5c61ef5.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.1d6146603ed68c1bf7a511304c208a89e5c61ef5.001.1",
+        "areaDesc": "Inland Chatham; Coastal Chatham; Beaufort; Coastal Colleton; Charleston; Coastal Jasper; Tidal Berkeley",
+        "geocode": {
+          "SAME": [
+            "013051",
+            "045013",
+            "045029",
+            "045019",
+            "045053",
+            "045015"
+          ],
+          "UGC": [
+            "GAZ218",
+            "GAZ219",
+            "SCZ148",
+            "SCZ149",
+            "SCZ150",
+            "SCZ151",
+            "SCZ152"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/forecast/GAZ218",
+          "https://api.weather.gov/zones/forecast/GAZ219",
+          "https://api.weather.gov/zones/forecast/SCZ148",
+          "https://api.weather.gov/zones/forecast/SCZ149",
+          "https://api.weather.gov/zones/forecast/SCZ150",
+          "https://api.weather.gov/zones/forecast/SCZ151",
+          "https://api.weather.gov/zones/forecast/SCZ152"
+        ],
+        "references": [],
+        "sent": "2026-10-17T04:53:00-04:00",
+        "effective": "2026-10-17T04:53:00-04:00",
+        "onset": "2026-10-17T04:53:00-04:00",
+        "expires": "2026-10-17T20:00:00-04:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Moderate",
+        "certainty": "Observed",
+        "urgency": "Expected",
+        "event": "Special Weather Statement",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Charleston SC",
+        "headline": "Special Weather Statement issued October 17 at 4:53AM EDT by NWS Charleston SC",
+        "description": "Gusty north winds will impact the region today in the wake of a\nstrong cold front. Winds on some of the taller bridges and elevated\nroadways around the Charleston, Beaufort and Savannah Metro Areas and\nnearby barrier islands, could see gusts as high as 40 mph at times\nmaking for hazardous driving conditions.\n\nSome of these bridges include the Ravenel Bridge, the Don Holt\nBridge, the James B. Edwar …[trimmed]",
+        "instruction": "Stay tuned to NOAA Weather Radio All Hazards, TV or your local news\nsource for the latest information from the National Weather Service.",
+        "response": "Execute",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "SPSCHS"
+          ],
+          "WMOidentifier": [
+            "WWUS82 KCHS 170853"
+          ],
+          "NWSheadline": [
+            "HAZARDOUS WINDS POSSIBLE ON AREA BRIDGES THROUGH THIS EVENING"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "SPS"
+          ],
+          "NationalWeatherService": [
+            "SPS"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "_note": "Real responses, NFHL MapServer/28 point queries, 2026-10-17.",
+  "catawba_gauge": {
+    "query": "-80.9740,34.9849",
+    "features": [
+      {
+        "attributes": {
+          "FLD_ZONE": "AE",
+          "ZONE_SUBTY": "FLOODWAY",
+          "SFHA_TF": "T",
+          "DFIRM_ID": "45091C"
+        }
+      }
+    ]
+  },
+  "rock_hill_downtown": {
+    "query": "-81.0251,34.9249",
+    "features": [
+      {
+        "attributes": {
+          "FLD_ZONE": "X",
+          "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+          "SFHA_TF": "F",
+          "DFIRM_ID": "45091C"
+        }
+      }
+    ]
+  }
+}

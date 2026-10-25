@@ -1,0 +1,2 @@
+# Store all text files with Unix line endings, so they look the same on every computer.
+* text=auto eol=lf

@@ -1,0 +1,445 @@
+{
+ "generated_at": "2026-10-18T22:51:10.428Z",
+ "sources": [
+  "USGS Water Data API (monitoring-locations, latest-continuous)",
+  "NOAA NWPS gauges API"
+ ],
+ "gauges": [
+  {
+   "site_id": "02153551",
+   "name": "BROAD RIVER BELOW NINETYNINE ISLAND RESERVOIR, SC",
+   "lon": -81.4925910726832,
+   "lat": 35.0312419044405,
+   "county_fips": "45021",
+   "nws_id": "CHFS1",
+   "stages": {
+    "action": 33,
+    "minor": 45,
+    "moderate": 50,
+    "major": 59
+   }
+  },
+  {
+   "site_id": "02153200",
+   "name": "BROAD RIVER NEAR BLACKSBURG, SC",
+   "lon": -81.5878719883229,
+   "lat": 35.1240172843836,
+   "county_fips": "45021",
+   "nws_id": "BBGS1",
+   "stages": {
+    "action": 13,
+    "minor": 16,
+    "moderate": 22,
+    "major": 25
+   }
+  },
+  {
+   "site_id": "02153480",
+   "name": "BUFFALO CREEK NR BLACKSBURG, SC",
+   "lon": -81.5502111111111,
+   "lat": 35.1264388888889,
+   "county_fips": "45021",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "02153590",
+   "name": "KINGS CREEK AT BLACKSBURG, SC",
+   "lon": -81.4364757818047,
+   "lat": 35.1184649807037,
+   "county_fips": "45021",
+   "nws_id": "KGCS1",
+   "stages": {
+    "action": 12,
+    "minor": 13.5,
+    "moderate": 16,
+    "major": 28
+   }
+  },
+  {
+   "site_id": "02153700",
+   "name": "THICKETTY CREEK AT CNTY ROAD 42 NEAR GAFFNEY, SC",
+   "lon": -81.714544427638,
+   "lat": 35.0629045145763,
+   "county_fips": "45021",
+   "nws_id": "THYS1",
+   "stages": {
+    "action": 10,
+    "minor": 15,
+    "moderate": 20,
+    "major": 22
+   }
+  },
+  {
+   "site_id": "02147403",
+   "name": "FISHING CREEK BELOW FORT LAWN, SC",
+   "lon": -80.9273011041356,
+   "lat": 34.6368105070698,
+   "county_fips": "45023",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "021474095",
+   "name": "GREAT FALLS RESERVOIR TAILRACE BL GREAT FALLS, SC",
+   "lon": -80.8935,
+   "lat": 34.55801666666667,
+   "county_fips": "45023",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "02147500",
+   "name": "ROCKY CREEK AT GREAT FALLS, SC",
+   "lon": -80.9198024632055,
+   "lat": 34.5654221094686,
+   "county_fips": "45023",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "021474750",
+   "name": "ROCKY CREEK AT SC 901 ABOVE GREAT FALLS, SC",
+   "lon": -80.98272222222222,
+   "lat": 34.61213888888889,
+   "county_fips": "45023",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "02161000",
+   "name": "BROAD RIVER AT ALSTON, SC",
+   "lon": -81.319541045799,
+   "lat": 34.2432033523527,
+   "county_fips": "45039",
+   "nws_id": "ALTS1",
+   "stages": {
+    "action": 11.5,
+    "minor": 20,
+    "moderate": 25,
+    "major": 30
+   }
+  },
+  {
+   "site_id": "02160991",
+   "name": "BROAD RIVER NEAR JENKINSVILLE, SC",
+   "lon": -81.3303746519312,
+   "lat": 34.260702847759,
+   "county_fips": "45039",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "02147659",
+   "name": "DUTCHMANS CREEK NEAR WINNSBORO, SC",
+   "lon": -80.9546666666667,
+   "lat": 34.3679444444444,
+   "county_fips": "45039",
+   "nws_id": "DCRS1",
+   "stages": null
+  },
+  {
+   "site_id": "02161805",
+   "name": "LITTLE RIVER AT CLARK BRIDGE RD NR WINNSBORO, SC",
+   "lon": -81.24572222222223,
+   "lat": 34.39333333333333,
+   "county_fips": "45039",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "021313485",
+   "name": "BUFFALO CREEK AT MT PISGAH, SC",
+   "lon": -80.4569444444444,
+   "lat": 34.5822222222222,
+   "county_fips": "45055",
+   "nws_id": "BCPS1",
+   "stages": null
+  },
+  {
+   "site_id": "02147801",
+   "name": "LAKE WATEREE TAILRACE ABOVE CAMDEN, SC",
+   "lon": -80.69842699322045,
+   "lat": 34.33207981234299,
+   "county_fips": "45055",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "02131455",
+   "name": "LITTLE LYNCHES RIVER NEAR KERSHAW, SC",
+   "lon": -80.5464611035604,
+   "lat": 34.551265597028,
+   "county_fips": "45055",
+   "nws_id": "KELS1",
+   "stages": null
+  },
+  {
+   "site_id": "02148000",
+   "name": "WATEREE RIVER NR. CAMDEN, SC",
+   "lon": -80.6539696577024,
+   "lat": 34.2445938480851,
+   "county_fips": "45055",
+   "nws_id": "CMDS1",
+   "stages": {
+    "action": 16,
+    "minor": 24,
+    "moderate": 29,
+    "major": 35
+   }
+  },
+  {
+   "site_id": "02147310",
+   "name": "CATAWBA RIVER AT GREAT FALLS, SC",
+   "lon": -80.890556,
+   "lat": 34.598056,
+   "county_fips": "45057",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "02147505",
+   "name": "CEDAR CREEK RES TAILRACE BELOW GREAT FALLS, SC",
+   "lon": -80.875278,
+   "lat": 34.541111,
+   "county_fips": "45057",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "02131472",
+   "name": "HANGING ROCK CREEK NR KERSHAW, SC",
+   "lon": -80.5828514004591,
+   "lat": 34.5162646491789,
+   "county_fips": "45057",
+   "nws_id": "HRKS1",
+   "stages": null
+  },
+  {
+   "site_id": "02131452",
+   "name": "LITTLE LYNCHES RIVER ABOVE KERSHAW, SC",
+   "lon": -80.5805555555555,
+   "lat": 34.5858333333333,
+   "county_fips": "45057",
+   "nws_id": "KEAS1",
+   "stages": null
+  },
+  {
+   "site_id": "0214676115",
+   "name": "MCALPINE CREEK AT SR2964 NR CAMP COX, SC",
+   "lon": -80.8916666666667,
+   "lat": 35.0408333333333,
+   "county_fips": "45057",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "02131500",
+   "name": "LYNCHES RIVER NEAR BISHOPVILLE, SC",
+   "lon": -80.213681576938,
+   "lat": 34.2501545269035,
+   "county_fips": "45061",
+   "nws_id": "BISS1",
+   "stages": null
+  },
+  {
+   "site_id": "021564493",
+   "name": "BROAD RIVER BELOW NEAL SHOALS RES NR CARLISLE, SC",
+   "lon": -81.4472222222222,
+   "lat": 34.6630555555556,
+   "county_fips": "45087",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "02156500",
+   "name": "BROAD RIVER NEAR CARLISLE, SC",
+   "lon": -81.4212089497894,
+   "lat": 34.5951393205305,
+   "county_fips": "45087",
+   "nws_id": "CARS1",
+   "stages": {
+    "action": 29,
+    "minor": 30,
+    "moderate": 34,
+    "major": 36
+   }
+  },
+  {
+   "site_id": "02160700",
+   "name": "ENOREE RIVER AT WHITMIRE, SC",
+   "lon": -81.5981594328121,
+   "lat": 34.5093039154242,
+   "county_fips": "45087",
+   "nws_id": "WHMS1",
+   "stages": {
+    "action": 23,
+    "minor": 25,
+    "moderate": 28,
+    "major": 32
+   }
+  },
+  {
+   "site_id": "02160000",
+   "name": "FAIRFOREST CREEK NEAR UNION, SC",
+   "lon": -81.6863611111111,
+   "lat": 34.6818333333333,
+   "county_fips": "45087",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "02156370",
+   "name": "PACOLET RIVER NEAR SARATT, SC",
+   "lon": -81.5316666666667,
+   "lat": 34.8733333333333,
+   "county_fips": "45087",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "02160055",
+   "name": "TYGER RIVER ABOVE WHITMIRE HIGHWAY NR WHITMIRE, SC",
+   "lon": -81.59228055555555,
+   "lat": 34.5857,
+   "county_fips": "45087",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "021457492",
+   "name": "ALLISON CREEK AT RD 114 NEAR YORK, SC",
+   "lon": -81.13833333333334,
+   "lat": 35.065,
+   "county_fips": "45091",
+   "nws_id": "ALIS1",
+   "stages": {
+    "action": 12,
+    "minor": 14,
+    "moderate": 19,
+    "major": 22
+   }
+  },
+  {
+   "site_id": "021459367",
+   "name": "BIG DUTCHMAN CREEK AT ROCK HILL, SC",
+   "lon": -81.0083388888889,
+   "lat": 34.9868083333333,
+   "county_fips": "45091",
+   "nws_id": "BDMS1",
+   "stages": {
+    "action": 9,
+    "minor": 11,
+    "moderate": 14,
+    "major": 16
+   }
+  },
+  {
+   "site_id": "02147020",
+   "name": "CATAWBA RIVER BELOW CATAWBA, SC",
+   "lon": -80.8795180347281,
+   "lat": 34.8362570530796,
+   "county_fips": "45091",
+   "nws_id": "CTBS1",
+   "stages": {
+    "action": 20,
+    "minor": 23,
+    "moderate": 27,
+    "major": 30
+   }
+  },
+  {
+   "site_id": "02145910",
+   "name": "CATAWBA RIVER BL LAKE WYLIE DAM FEWELL ISLAND, SC",
+   "lon": -81.0015638888889,
+   "lat": 35.0164194444444,
+   "county_fips": "45091",
+   "nws_id": null,
+   "stages": null
+  },
+  {
+   "site_id": "02146000",
+   "name": "CATAWBA RIVER NEAR ROCK HILL, SC",
+   "lon": -80.9739658354297,
+   "lat": 34.9848693460471,
+   "county_fips": "45091",
+   "nws_id": "RHIS1",
+   "stages": {
+    "action": 13,
+    "minor": 15,
+    "moderate": 25,
+    "major": 30
+   }
+  },
+  {
+   "site_id": "021473415",
+   "name": "FISHING CREEK AT HWY 5 BELOW YORK, SC",
+   "lon": -81.18015,
+   "lat": 34.9753194444444,
+   "county_fips": "45091",
+   "nws_id": "FISS1",
+   "stages": {
+    "action": 10,
+    "minor": 13,
+    "moderate": 17,
+    "major": 21
+   }
+  },
+  {
+   "site_id": "02146110",
+   "name": "MANCHESTER CREEK AT ROCK HILL, SC",
+   "lon": -80.9797222222222,
+   "lat": 34.9444444444444,
+   "county_fips": "45091",
+   "nws_id": "MCHS1",
+   "stages": {
+    "action": 12,
+    "minor": 15,
+    "moderate": 20,
+    "major": 25
+   }
+  },
+  {
+   "site_id": "02146800",
+   "name": "SUGAR CREEK NR FORT MILL, SC",
+   "lon": -80.90195,
+   "lat": 35.0056694444444,
+   "county_fips": "45091",
+   "nws_id": "SUGS1",
+   "stages": {
+    "action": 26,
+    "minor": 27,
+    "moderate": 34,
+    "major": 40
+   }
+  },
+  {
+   "site_id": "021473426",
+   "name": "TOOLS FORK CREEK NEAR ROCK HILL, SC",
+   "lon": -81.1058611111111,
+   "lat": 34.9564805555556,
+   "county_fips": "45091",
+   "nws_id": "TOLS1",
+   "stages": {
+    "action": 10,
+    "minor": 11,
+    "moderate": 15,
+    "major": 20
+   }
+  },
+  {
+   "site_id": "021473428",
+   "name": "WILDCAT CREEK BELOW ROCK HILL, SC",
+   "lon": -81.0686944444444,
+   "lat": 34.8892777777778,
+   "county_fips": "45091",
+   "nws_id": "WCCS1",
+   "stages": {
+    "action": 10,
+    "minor": 12,
+    "moderate": 18,
+    "major": 20
+   }
+  }
+ ]
+}

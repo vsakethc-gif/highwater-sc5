@@ -1,0 +1,485 @@
+{
+  "_note": "Real response, NWPS gauges in SC-5 bbox, 2026-10-17. First 12 gauges.",
+  "gauges": [
+    {
+      "lid": "ALIS1",
+      "name": "Allison Creek near York",
+      "rfc": {
+        "abbreviation": "SERFC",
+        "name": "Southeast River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "GSP",
+        "name": "Greer"
+      },
+      "state": {
+        "abbreviation": "SC",
+        "name": "South Carolina"
+      },
+      "latitude": 35.065,
+      "longitude": -81.138333333333,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": ""
+      },
+      "status": {
+        "observed": {
+          "primary": 3.94,
+          "primaryUnit": "ft",
+          "secondary": 0.055,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-17T22:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ALTS1",
+      "name": "Broad River in NC/SC at Alston",
+      "rfc": {
+        "abbreviation": "SERFC",
+        "name": "Southeast River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "CAE",
+        "name": "West Columbia"
+      },
+      "state": {
+        "abbreviation": "SC",
+        "name": "South Carolina"
+      },
+      "latitude": 34.2432,
+      "longitude": -81.31954,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": ""
+      },
+      "status": {
+        "observed": {
+          "primary": 4.42,
+          "primaryUnit": "ft",
+          "secondary": 2.97,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-17T22:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AWRN7",
+      "name": "Sugar Creek above W Arrowood Rd, 2 W Starmount",
+      "rfc": {
+        "abbreviation": "SERFC",
+        "name": "Southeast River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "GSP",
+        "name": "Greer"
+      },
+      "state": {
+        "abbreviation": "NC",
+        "name": "North Carolina"
+      },
+      "latitude": 35.139722,
+      "longitude": -80.911111,
+      "pedts": {
+        "observed": "HGIRR",
+        "forecast": "HGIFF"
+      },
+      "status": {
+        "observed": {
+          "primary": 0.28,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-17T22:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "BBGS1",
+      "name": "Broad River at Shelby Hwy (SC 18), 4 W Blacksburg",
+      "rfc": {
+        "abbreviation": "SERFC",
+        "name": "Southeast River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "GSP",
+        "name": "Greer"
+      },
+      "state": {
+        "abbreviation": "SC",
+        "name": "South Carolina"
+      },
+      "latitude": 35.124017,
+      "longitude": -81.587872,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFF"
+      },
+      "status": {
+        "observed": {
+          "primary": 3.93,
+          "primaryUnit": "ft",
+          "secondary": 1.79,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-17T22:15:00Z"
+        },
+        "forecast": {
+          "primary": 3.5,
+          "primaryUnit": "ft",
+          "secondary": 1.26,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-18T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "BCCS1",
+      "name": "Big Creek Near Saluda 6NNE",
+      "rfc": {
+        "abbreviation": "SERFC",
+        "name": "Southeast River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "CAE",
+        "name": "West Columbia"
+      },
+      "state": {
+        "abbreviation": "SC",
+        "name": "South Carolina"
+      },
+      "latitude": 34.072717,
+      "longitude": -81.719772,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": ""
+      },
+      "status": {
+        "observed": {
+          "primary": 63.96,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-17T21:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "BCLN7",
+      "name": "Briar Creek at Colony Road",
+      "rfc": {
+        "abbreviation": "SERFC",
+        "name": "Southeast River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "GSP",
+        "name": "Greer"
+      },
+      "state": {
+        "abbreviation": "NC",
+        "name": "North Carolina"
+      },
+      "latitude": 35.175277777778,
+      "longitude": -80.830833333333,
+      "pedts": {
+        "observed": "HGIRR",
+        "forecast": "HGIFF"
+      },
+      "status": {
+        "observed": {
+          "primary": 2.18,
+          "primaryUnit": "ft",
+          "secondary": 0.0047,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-17T22:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "BCPS1",
+      "name": "Buffalo Creek (SC) near Mt. Pisgah",
+      "rfc": {
+        "abbreviation": "SERFC",
+        "name": "Southeast River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "CAE",
+        "name": "West Columbia"
+      },
+      "state": {
+        "abbreviation": "SC",
+        "name": "South Carolina"
+      },
+      "latitude": 34.582222,
+      "longitude": -80.456944,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": ""
+      },
+      "status": {
+        "observed": {
+          "primary": 4.07,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-17T22:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "BDMS1",
+      "name": "Big Dutchman Creek at Mt Gallant Rd, 5 NNE Rock Hill",
+      "rfc": {
+        "abbreviation": "SERFC",
+        "name": "Southeast River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "GSP",
+        "name": "Greer"
+      },
+      "state": {
+        "abbreviation": "SC",
+        "name": "South Carolina"
+      },
+      "latitude": 34.9868083,
+      "longitude": -81.00833889,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": ""
+      },
+      "status": {
+        "observed": {
+          "primary": 1.08,
+          "primaryUnit": "ft",
+          "secondary": 0,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-17T22:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "BISS1",
+      "name": "Lynches River above Bishopville",
+      "rfc": {
+        "abbreviation": "SERFC",
+        "name": "Southeast River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "CAE",
+        "name": "West Columbia"
+      },
+      "state": {
+        "abbreviation": "SC",
+        "name": "South Carolina"
+      },
+      "latitude": 34.25015,
+      "longitude": -80.2136,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFF"
+      },
+      "status": {
+        "observed": {
+          "primary": 5.01,
+          "primaryUnit": "ft",
+          "secondary": 0.179,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-17T22:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "BLAS1",
+      "name": "Broad River at Gaston Shoals Reservoir and Dam, 5 WNW Blacksburg",
+      "rfc": {
+        "abbreviation": "SERFC",
+        "name": "Southeast River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "GSP",
+        "name": "Greer"
+      },
+      "state": {
+        "abbreviation": "SC",
+        "name": "South Carolina"
+      },
+      "latitude": 35.137628,
+      "longitude": -81.597906,
+      "pedts": {
+        "observed": "HPIRG",
+        "forecast": "HPIFF"
+      },
+      "status": {
+        "observed": {
+          "primary": 94.96,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-17T22:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "BRGS1",
+      "name": "Broad River in NC/SC near Gaffney",
+      "rfc": {
+        "abbreviation": "SERFC",
+        "name": "Southeast River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "GSP",
+        "name": "Greer"
+      },
+      "state": {
+        "abbreviation": "SC",
+        "name": "South Carolina"
+      },
+      "latitude": 35.08901789,
+      "longitude": -81.5720384,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFF"
+      },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "out_of_service",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "out_of_service",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "BRPN7",
+      "name": "Briar Creek at Providence road",
+      "rfc": {
+        "abbreviation": "SERFC",
+        "name": "Southeast River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "GSP",
+        "name": "Greer"
+      },
+      "state": {
+        "abbreviation": "NC",
+        "name": "North Carolina"
+      },
+      "latitude": 35.1825,
+      "longitude": -80.82,
+      "pedts": {
+        "observed": "HGIRR",
+        "forecast": "HGIFF"
+      },
+      "status": {
+        "observed": {
+          "primary": 1.18,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-17T22:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    }
+  ]
+}

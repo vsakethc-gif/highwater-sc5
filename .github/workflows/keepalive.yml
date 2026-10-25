@@ -1,0 +1,27 @@
+# Keep the free Supabase project awake.
+# Supabase pauses free projects after 7 days without activity, which would break
+# community reports during judging. Every 3 days this reads one public report row.
+# It uses only PUBLIC values: the same project URL and publishable key the website
+# already uses (see src/config.ts). Security comes from Row Level Security.
+name: Keep Supabase awake
+
+on:
+  schedule:
+    - cron: '17 9 */3 * *' # 9:17 UTC every 3rd day
+  workflow_dispatch:
+
+env:
+  SUPABASE_URL: https://nywkprgdvishxicumtvx.supabase.co
+  SUPABASE_PUBLISHABLE_KEY: sb_publishable_R0vcZe999h5U7Co7Sx3dVA_QpQxzpPA
+
+jobs:
+  ping:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Read one public row
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "apikey: $SUPABASE_PUBLISHABLE_KEY" \
+            "$SUPABASE_URL/rest/v1/reports?select=id&limit=1")
+          echo "Supabase answered $code"
+          test "$code" = "200"

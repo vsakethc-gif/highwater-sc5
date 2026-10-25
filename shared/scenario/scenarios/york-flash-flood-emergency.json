@@ -1,0 +1,26 @@
+{
+  "id": "york-flash-flood-emergency",
+  "title": "Flash flood emergency in Fort Mill and Rock Hill",
+  "summary": "Extreme rain over eastern York County. NWS issues a Flash Flood Warning with a catastrophic damage threat. Shows the Danger level.",
+  "county": "45091",
+  "alerts": [
+    {
+      "event": "Flash Flood Warning",
+      "headline": "FLASH FLOOD EMERGENCY FOR FORT MILL AND EASTERN ROCK HILL",
+      "description": "SIMULATED ALERT. ...FLASH FLOOD EMERGENCY FOR FORT MILL AND EASTERN ROCK HILL...\n\nThis is a PARTICULARLY DANGEROUS SITUATION. SEEK HIGHER GROUND NOW!\n\n* WHAT...Life-threatening flash flooding of creeks, streams, and roads.\n* WHERE...Sugar Creek, Wildcat Creek, and Tools Fork.\n* IMPACTS...Water rescues are in progress. Many roads are flooded.",
+      "instruction": "SIMULATED. Move to higher ground now! This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area subject to flooding or under an evacuation order.",
+      "county_fips": ["45091"],
+      "damage_threat": { "flashFloodDamageThreat": "CATASTROPHIC" },
+      "polygon": [[-81.06, 34.93], [-80.86, 34.93], [-80.86, 35.08], [-81.06, 35.08], [-81.06, 34.93]],
+      "startOffsetMin": -45,
+      "endOffsetMin": 240
+    }
+  ],
+  "gauges": {
+    "02146800": { "from": 6.5, "to": 35.6 },
+    "021473428": { "from": 3.1, "to": 18.7 },
+    "021473426": { "from": 2.4, "to": 13.2 },
+    "02146000": { "from": 6.0, "to": 14.1 }
+  },
+  "rain": { "next24h_in": 4.2, "next48h_in": 5.1 }
+}

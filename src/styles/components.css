@@ -1,0 +1,544 @@
+/*
+ * components.css — styles for reusable pieces (header, banner, badge, ...).
+ * Uses only variables from tokens.css. More components are added in later phases.
+ */
+
+/* ---------- Site header ---------- */
+.site-header {
+  background: var(--color-surface);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  min-height: 4rem;
+}
+
+/* Logo mark + wordmark. The serif wordmark gives the app its own voice. */
+.site-header__name {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  min-height: var(--tap-target);
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
+  font-weight: var(--weight-semibold);
+  letter-spacing: -0.015em;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.logo-mark {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex: none;
+  color: var(--color-accent);
+}
+
+/* ---------- Banner (info / simulation / stale / emergency) ---------- */
+.banner {
+  font-size: var(--text-sm);
+}
+
+.banner__inner {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-1);
+  padding-block: var(--space-1);
+}
+
+.banner--info {
+  background: var(--banner-info-bg);
+  color: var(--banner-info-fg);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.banner--sim {
+  background: var(--banner-sim-bg);
+  color: var(--banner-sim-fg);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.02em;
+}
+
+.banner .icon {
+  margin-top: 0.1em;
+}
+
+/* ---------- Status badge: icon + label + color, never color alone ---------- */
+.status-badge {
+  display: inline-flex;
+  justify-self: start; /* fit the text, even inside a grid cell */
+  align-items: center;
+  gap: var(--space-0);
+  min-height: 2rem;
+  padding: var(--space-0) var(--space-1);
+  border: var(--border-width) solid transparent;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  line-height: 1;
+}
+
+.status-badge .icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.status-badge--normal {
+  background: var(--status-normal-bg);
+  color: var(--status-normal-fg);
+  border-color: var(--status-normal-border);
+}
+
+.status-badge--watch {
+  background: var(--status-watch-bg);
+  color: var(--status-watch-fg);
+  border-color: var(--status-watch-border);
+}
+
+.status-badge--warning {
+  background: var(--status-warning-bg);
+  color: var(--status-warning-fg);
+  border-color: var(--status-warning-border);
+}
+
+.status-badge--danger {
+  background: var(--status-danger-bg);
+  color: var(--status-danger-fg);
+  border-color: var(--status-danger-border);
+}
+
+/* ---------- Section and definition list used on the placeholder page ---------- */
+/* Sections open with a short heavy rule, like a newspaper data page. */
+.section {
+  padding-block: var(--space-5) 0;
+}
+
+.section__title {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-2);
+  padding-top: var(--space-1);
+  border-top: 3px solid var(--color-ink);
+}
+
+.eyebrow {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+  margin-bottom: var(--space-1);
+}
+
+.page-title {
+  font-family: var(--font-serif);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-semibold);
+  letter-spacing: -0.01em;
+  max-width: 22ch;
+}
+
+@media (min-width: 48rem) {
+  .page-title {
+    font-size: var(--text-3xl);
+  }
+}
+
+.lede {
+  margin-top: var(--space-2);
+  font-size: var(--text-lg);
+  color: var(--color-ink-muted);
+}
+
+/* A two-column list of the four levels: badge on the left, meaning on the right. */
+.level-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.level-list li {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  align-items: center;
+  gap: var(--space-2);
+  padding-block: var(--space-2);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+/* ---------- Footer with the always-visible emergency line ---------- */
+.site-footer {
+  margin-top: var(--space-5);
+  padding-block: var(--space-4);
+  background: var(--color-surface);
+  border-top: var(--border-width) solid var(--color-border);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+}
+
+.site-footer p + p {
+  margin-top: var(--space-1);
+}
+
+.emergency-line {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--color-ink);
+  font-weight: var(--weight-semibold);
+}
+
+.emergency-line a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap-target);
+}
+
+.section__note {
+  margin-top: var(--space-1);
+}
+
+/* ---------- Page intro (county name + updated time) ---------- */
+.page-intro {
+  padding-block: var(--space-4) var(--space-3);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.page-intro__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-1) var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.section__intro {
+  margin-bottom: var(--space-2);
+  color: var(--color-ink-muted);
+}
+
+.source-line {
+  margin-top: var(--space-2);
+}
+
+/* ---------- Buttons ---------- */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  min-height: var(--tap-target);
+  padding: 0 var(--space-2);
+  border: var(--border-width) solid transparent;
+  border-radius: var(--radius-md);
+  font: inherit;
+  font-weight: var(--weight-semibold);
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--ease), border-color var(--duration-fast) var(--ease);
+}
+
+.button--primary {
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+.button--primary:hover {
+  background: var(--color-accent-hover);
+}
+
+.button--secondary {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border-color: var(--color-border-strong);
+}
+
+.button--secondary:hover {
+  border-color: var(--color-ink-muted);
+  background: var(--color-surface-sunken);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button:disabled,
+.button[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ---------- Chips (small labels) ---------- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.75rem;
+  padding: 0 var(--space-1);
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  white-space: nowrap;
+  color: var(--color-ink);
+  background: var(--color-surface);
+}
+
+.chip--muted {
+  color: var(--color-ink-subtle);
+  border-style: dashed;
+}
+
+.chip--watch {
+  background: var(--status-watch-bg);
+  color: var(--status-watch-fg);
+  border-color: var(--status-watch-border);
+}
+
+.chip--warning {
+  background: var(--status-warning-bg);
+  color: var(--status-warning-fg);
+  border-color: var(--status-warning-border);
+}
+
+.chip--danger {
+  background: var(--status-danger-bg);
+  color: var(--status-danger-fg);
+  border-color: var(--status-danger-border);
+}
+
+/* ---------- Notices, empty states, skeletons ---------- */
+.notice {
+  display: flex;
+  gap: var(--space-2);
+  padding: var(--space-2);
+  border: var(--border-width) solid var(--color-border-strong);
+  border-left-width: 4px;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.notice > .icon {
+  margin-top: 0.15em;
+}
+
+.notice p + p {
+  margin-top: var(--space-0);
+}
+
+.notice .button {
+  margin-top: var(--space-2);
+}
+
+.notice--error {
+  border-left-color: var(--status-warning-bg);
+}
+
+.notice__title {
+  font-weight: var(--weight-semibold);
+}
+
+.empty-state {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-1);
+  padding: var(--space-2);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.empty-state .icon {
+  margin-top: 0.15em;
+  color: var(--status-normal-fg);
+}
+
+.skeleton-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--space-1);
+}
+
+.skeleton {
+  height: 4.5rem;
+  border-radius: var(--radius-md);
+  background: var(--color-surface-sunken);
+}
+
+/* ---------- Alert rows ---------- */
+.alert-list,
+.gauge-list {
+  list-style: none;
+  padding: 0;
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.alert-row {
+  padding-block: var(--space-2);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.alert-row__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.alert-row__event {
+  font-size: var(--text-lg);
+}
+
+.alert-row__headline {
+  margin-top: var(--space-0);
+}
+
+.alert-row__details {
+  margin-top: var(--space-1);
+}
+
+.alert-row__details summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap-target);
+  color: var(--color-accent);
+  cursor: pointer;
+  font-weight: var(--weight-medium);
+}
+
+.alert-row__text {
+  max-width: var(--measure);
+  margin-top: var(--space-1);
+  white-space: pre-line; /* NWS text uses line breaks for structure */
+}
+
+.alert-row__details a .icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.1em;
+}
+
+/* ---------- Gauge rows ---------- */
+/* Rows change layout based on the width of their own list (a "container query"), not the screen,
+   because on wide screens the list sits in a narrow side column. */
+.gauge-list {
+  container-type: inline-size;
+}
+
+.gauge-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    'main reading'
+    'chart chart';
+  gap: var(--space-1) var(--space-2);
+  padding-block: var(--space-2);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+@container (min-width: 40rem) {
+  .gauge-row {
+    grid-template-columns: 1fr 9rem 15rem;
+    grid-template-areas: 'main reading chart';
+    align-items: center;
+  }
+}
+
+.gauge-row__main {
+  grid-area: main;
+  min-width: 0;
+}
+
+.gauge-row__name {
+  font-size: var(--text-md);
+  font-weight: var(--weight-semibold);
+}
+
+.gauge-row__reading {
+  grid-area: reading;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.gauge-row__value {
+  font-size: var(--text-xl);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+}
+
+.gauge-row__trend {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-0);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+}
+
+.gauge-row__trend .icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.gauge-row__chart {
+  grid-area: chart;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+@container (min-width: 40rem) {
+  .gauge-row__chart {
+    justify-content: flex-end;
+  }
+}
+
+.sparkline {
+  flex: none;
+  overflow: visible;
+}
+
+.sparkline polyline {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.sparkline circle {
+  fill: var(--color-accent);
+}
+
+.stale-note {
+  display: flex;
+  align-items: center;
+  gap: var(--space-0);
+  margin-top: var(--space-0);
+  font-size: var(--text-sm);
+  color: var(--status-watch-fg);
+}
+
+.stale-note .icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Danger button: used only for "Call 911" style actions. */
+.button--danger {
+  background: var(--status-danger-bg);
+  color: var(--status-danger-fg);
+  text-decoration: none;
+}
+
+.button--danger:hover {
+  background: var(--color-ink);
+  color: var(--color-on-accent);
+}

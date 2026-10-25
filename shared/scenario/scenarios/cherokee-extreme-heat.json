@@ -1,0 +1,19 @@
+{
+  "id": "cherokee-extreme-heat",
+  "title": "Extreme heat warning in Cherokee County",
+  "summary": "A heat wave pushes the heat index above 110°F in the Upstate. NWS issues an Extreme Heat Warning. Shows heat guidance: stay cool, never leave anyone in a car, know the signs of heat stroke.",
+  "county": "45021",
+  "alerts": [
+    {
+      "event": "Extreme Heat Warning",
+      "headline": "EXTREME HEAT WARNING IN EFFECT FROM NOON TODAY TO 8 PM THURSDAY",
+      "description": "SIMULATED ALERT. * WHAT...Dangerously hot conditions with heat index values up to 112.\n* WHERE...Cherokee, Union, and York counties.\n* WHEN...From noon today to 8 PM Thursday.\n* IMPACTS...Extreme heat will significantly increase the potential for heat related illnesses, particularly for those working or participating in outdoor activities.",
+      "instruction": "SIMULATED. Drink plenty of fluids, stay in an air-conditioned room, stay out of the sun, and check up on relatives and neighbors.",
+      "county_fips": ["45021", "45087", "45091"],
+      "startOffsetMin": -60,
+      "endOffsetMin": 3000
+    }
+  ],
+  "gauges": {},
+  "rain": { "next24h_in": 0, "next48h_in": 0.1 }
+}

@@ -1,0 +1,43 @@
+{
+  "_note": "Real response, Census Geocoder onelineaddress, 155 Johnston St Rock Hill. No CORS header (browser cannot call directly).",
+  "result": {
+    "input": {
+      "address": {
+        "address": "155 Johnston St, Rock Hill, SC 29730"
+      },
+      "benchmark": {
+        "isDefault": true,
+        "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+        "id": "4",
+        "benchmarkName": "Public_AR_Current"
+      }
+    },
+    "addressMatches": [
+      {
+        "tigerLine": {
+          "side": "L",
+          "tigerLineId": "19791631"
+        },
+        "coordinates": {
+          "x": -81.029024346466,
+          "y": 34.923308619766
+        },
+        "addressComponents": {
+          "zip": "29730",
+          "streetName": "JOHNSTON",
+          "preType": "",
+          "city": "ROCK HILL",
+          "preDirection": "",
+          "suffixDirection": "",
+          "fromAddress": "101",
+          "state": "SC",
+          "suffixType": "ST",
+          "toAddress": "199",
+          "suffixQualifier": "",
+          "preQualifier": ""
+        },
+        "matchedAddress": "155 JOHNSTON ST, ROCK HILL, SC, 29730"
+      }
+    ]
+  }
+}

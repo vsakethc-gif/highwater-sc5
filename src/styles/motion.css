@@ -1,0 +1,241 @@
+/*
+ * motion.css — every animation in the app, in one place.
+ *
+ * Rules we follow:
+ *   - Motion explains something (new content arrived, a line of data being drawn, live data),
+ *     it never decorates. Nothing bounces, flashes, or loops except the small "Live" dot
+ *     and the loading shimmer.
+ *   - Short: most animations take a quarter of a second.
+ *   - People who ask their device for less motion get none (see the end of this file).
+ *   - Only opacity and transform are animated, so nothing on the page moves out of place.
+ */
+
+:root {
+  --duration-enter: 260ms;
+  --duration-draw: 900ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* fast start, gentle stop */
+}
+
+/* ---------- Keyframes ---------- */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+}
+
+@keyframes fill {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  to {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}
+
+/* ---------- Pages: content rises in when a screen opens ---------- */
+main#main > :not(.map-layout) {
+  animation: rise var(--duration-enter) var(--ease-out) both;
+}
+
+main#main > :nth-child(2) {
+  animation-delay: 50ms;
+}
+
+main#main > :nth-child(n + 3) {
+  animation-delay: 100ms;
+}
+
+.banner--sim,
+.banner--offline {
+  animation: fade var(--duration-enter) var(--ease-out) both;
+}
+
+/* ---------- Status card: the card rises, the badge pops, the level meter fills step by step ---------- */
+.status-card {
+  animation: rise 320ms var(--ease-out) both;
+}
+
+.status-card .status-badge {
+  animation: pop var(--duration-enter) var(--ease-out) 120ms both;
+}
+
+.level-meter__step.is-on .level-meter__bar {
+  transform-origin: left center;
+  animation: fill 280ms var(--ease-out) both;
+}
+
+.level-meter__step:nth-child(1) .level-meter__bar { animation-delay: 220ms; }
+.level-meter__step:nth-child(2) .level-meter__bar { animation-delay: 310ms; }
+.level-meter__step:nth-child(3) .level-meter__bar { animation-delay: 400ms; }
+.level-meter__step:nth-child(4) .level-meter__bar { animation-delay: 490ms; }
+
+/* "Live" dot: a soft ring grows out of it every two seconds, like a radar ping. */
+.live-dot::after {
+  animation: pulse 2s var(--ease-out) infinite;
+}
+
+/* ---------- Lists: rows arrive one after another ---------- */
+.gauge-list > li,
+.alert-list > li,
+.route-list > li,
+.report-list > li,
+.scenario-list > li,
+.trigger-list > li {
+  animation: rise var(--duration-enter) var(--ease-out) both;
+}
+
+:is(.gauge-list, .alert-list, .route-list, .report-list, .scenario-list, .trigger-list) > li:nth-child(2) { animation-delay: 40ms; }
+:is(.gauge-list, .alert-list, .route-list, .report-list, .scenario-list, .trigger-list) > li:nth-child(3) { animation-delay: 80ms; }
+:is(.gauge-list, .alert-list, .route-list, .report-list, .scenario-list, .trigger-list) > li:nth-child(4) { animation-delay: 120ms; }
+:is(.gauge-list, .alert-list, .route-list, .report-list, .scenario-list, .trigger-list) > li:nth-child(5) { animation-delay: 160ms; }
+:is(.gauge-list, .alert-list, .route-list, .report-list, .scenario-list, .trigger-list) > li:nth-child(n + 6) { animation-delay: 200ms; }
+
+/* ---------- River sparklines: the line draws itself left to right, then the latest reading appears ---------- */
+.sparkline polyline {
+  stroke-dasharray: 1; /* the line's length is set to 1 in sparkline.ts (pathLength) */
+  animation: draw var(--duration-draw) var(--ease-out) 150ms both;
+}
+
+.sparkline circle {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pop 200ms var(--ease-out) 900ms both;
+}
+
+/* ---------- Loading boxes shimmer, so it's clear something is on its way ---------- */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-surface-sunken) 0%,
+    color-mix(in srgb, var(--color-surface-sunken), #ffffff 60%) 50%,
+    var(--color-surface-sunken) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+
+/* ---------- "Why this status?" and other expanders open smoothly (newer browsers) ---------- */
+.why,
+.tract-list {
+  interpolate-size: allow-keywords;
+}
+
+.why::details-content,
+.tract-list::details-content {
+  block-size: 0;
+  overflow: hidden;
+  transition:
+    block-size var(--duration-enter) var(--ease-out),
+    content-visibility var(--duration-enter) allow-discrete;
+}
+
+.why[open]::details-content,
+.tract-list[open]::details-content {
+  block-size: auto;
+}
+
+.why summary,
+.tract-list summary {
+  transition: background-color var(--duration-fast) var(--ease);
+}
+
+.why summary:hover,
+.tract-list summary:hover {
+  background: var(--color-surface-sunken);
+}
+
+/* ---------- Dialogs (Scenario Mode picker, power-line warning) fade and settle in ---------- */
+dialog[open] {
+  animation: pop var(--duration-enter) var(--ease-out) both;
+}
+
+dialog[open]::backdrop {
+  animation: fade var(--duration-enter) var(--ease-out) both;
+}
+
+/* ---------- Buttons and tabs press in slightly, like a real button ---------- */
+.button,
+.header-button,
+.category-button,
+.tab-bar a,
+.search-result,
+.scenario-option {
+  transition:
+    background-color var(--duration-fast) var(--ease),
+    border-color var(--duration-fast) var(--ease),
+    color var(--duration-fast) var(--ease),
+    transform 80ms var(--ease);
+}
+
+:is(.button, .header-button, .category-button, .search-result, .scenario-option):active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.tab-bar a:active .icon {
+  transform: scale(0.9);
+}
+
+.site-nav a {
+  transition:
+    color var(--duration-fast) var(--ease),
+    border-color var(--duration-fast) var(--ease);
+}
+
+.site-nav a:hover:not([aria-current='page']) {
+  border-bottom-color: var(--color-border-strong);
+}
+
+/* The current tab's marker grows in from the middle. */
+.tab-bar a[aria-current='page']::before {
+  animation: fill 220ms var(--ease-out) both;
+  transform-origin: center;
+}
+
+/* ---------- Less motion, when asked ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after,
+  *::backdrop,
+  *::details-content {
+    animation: none !important;
+    transition-duration: 0ms !important;
+  }
+}

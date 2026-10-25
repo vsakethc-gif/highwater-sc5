@@ -1,0 +1,9 @@
+{
+  "id": "york-calm",
+  "title": "A quiet evening before the storm",
+  "summary": "No alerts, rivers at ordinary levels, light rain in the forecast. The first step of the storm timeline. Shows the Normal level.",
+  "county": "45091",
+  "alerts": [],
+  "gauges": {},
+  "rain": { "next24h_in": 0.1, "next48h_in": 0.4 }
+}

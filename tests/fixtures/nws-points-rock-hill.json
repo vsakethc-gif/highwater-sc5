@@ -1,0 +1,11 @@
+{
+  "_note": "Real response, api.weather.gov/points/34.9249,-81.0251, trimmed.",
+  "properties": {
+    "gridId": "GSP",
+    "gridX": 114,
+    "gridY": 51,
+    "forecastGridData": "https://api.weather.gov/gridpoints/GSP/114,51",
+    "county": "https://api.weather.gov/zones/county/SCC091",
+    "forecastZone": "https://api.weather.gov/zones/forecast/SCZ009"
+  }
+}

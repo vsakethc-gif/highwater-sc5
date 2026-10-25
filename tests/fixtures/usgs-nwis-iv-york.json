@@ -1,0 +1,867 @@
+{
+  "_note": "Real response, legacy waterservices.usgs.gov/nwis/iv, York County, 2026-10-17. Trimmed to 2 sites (one with an empty discharge series).",
+  "value": {
+    "timeSeries": [
+      {
+        "sourceInfo": {
+          "siteName": "BIG DUTCHMAN CREEK AT ROCK HILL, SC",
+          "siteCode": [
+            {
+              "value": "021459367",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 34.9868083,
+              "longitude": -81.00833889
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "03050103",
+              "name": "hucCd"
+            },
+            {
+              "value": "45",
+              "name": "stateCd"
+            },
+            {
+              "value": "45091",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [],
+            "qualifier": [],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 176916
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:021459367:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "BIG DUTCHMAN CREEK AT ROCK HILL, SC",
+          "siteCode": [
+            {
+              "value": "021459367",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 34.9868083,
+              "longitude": -81.00833889
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "03050103",
+              "name": "hucCd"
+            },
+            {
+              "value": "45",
+              "name": "stateCd"
+            },
+            {
+              "value": "45091",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "1.07",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T13:00:00.000-04:00"
+              },
+              {
+                "value": "1.07",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T13:15:00.000-04:00"
+              },
+              {
+                "value": "1.07",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T13:30:00.000-04:00"
+              },
+              {
+                "value": "1.07",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T13:45:00.000-04:00"
+              },
+              {
+                "value": "1.07",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T14:00:00.000-04:00"
+              },
+              {
+                "value": "1.07",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T14:15:00.000-04:00"
+              },
+              {
+                "value": "1.07",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T14:30:00.000-04:00"
+              },
+              {
+                "value": "1.07",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T14:45:00.000-04:00"
+              },
+              {
+                "value": "1.07",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T15:00:00.000-04:00"
+              },
+              {
+                "value": "1.07",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T15:15:00.000-04:00"
+              },
+              {
+                "value": "1.07",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T15:30:00.000-04:00"
+              },
+              {
+                "value": "1.07",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T15:45:00.000-04:00"
+              },
+              {
+                "value": "1.07",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T16:00:00.000-04:00"
+              },
+              {
+                "value": "1.07",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T16:15:00.000-04:00"
+              },
+              {
+                "value": "1.07",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T16:30:00.000-04:00"
+              },
+              {
+                "value": "1.08",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T16:45:00.000-04:00"
+              },
+              {
+                "value": "1.08",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T17:00:00.000-04:00"
+              },
+              {
+                "value": "1.08",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T17:15:00.000-04:00"
+              },
+              {
+                "value": "1.08",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T17:30:00.000-04:00"
+              },
+              {
+                "value": "1.08",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T17:45:00.000-04:00"
+              },
+              {
+                "value": "1.08",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T18:00:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 176914
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:021459367:00065:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "CATAWBA RIVER NEAR ROCK HILL, SC",
+          "siteCode": [
+            {
+              "value": "02146000",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 34.98486935,
+              "longitude": -80.9739658
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "03050103",
+              "name": "hucCd"
+            },
+            {
+              "value": "45",
+              "name": "stateCd"
+            },
+            {
+              "value": "45091",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00060",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807197,
+              "default": true
+            }
+          ],
+          "variableName": "Streamflow, ft&#179;/s",
+          "variableDescription": "Discharge, cubic feet per second",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft3/s"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807197"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "5000",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T13:00:00.000-04:00"
+              },
+              {
+                "value": "5000",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T13:15:00.000-04:00"
+              },
+              {
+                "value": "4970",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T13:30:00.000-04:00"
+              },
+              {
+                "value": "5000",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T13:45:00.000-04:00"
+              },
+              {
+                "value": "5000",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T14:00:00.000-04:00"
+              },
+              {
+                "value": "4970",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T14:15:00.000-04:00"
+              },
+              {
+                "value": "5000",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T14:30:00.000-04:00"
+              },
+              {
+                "value": "5000",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T14:45:00.000-04:00"
+              },
+              {
+                "value": "5000",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T15:00:00.000-04:00"
+              },
+              {
+                "value": "5000",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T15:15:00.000-04:00"
+              },
+              {
+                "value": "5040",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T15:30:00.000-04:00"
+              },
+              {
+                "value": "5000",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T15:45:00.000-04:00"
+              },
+              {
+                "value": "5000",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T16:00:00.000-04:00"
+              },
+              {
+                "value": "5000",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T16:15:00.000-04:00"
+              },
+              {
+                "value": "5000",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T16:30:00.000-04:00"
+              },
+              {
+                "value": "5040",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T16:45:00.000-04:00"
+              },
+              {
+                "value": "5000",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T17:00:00.000-04:00"
+              },
+              {
+                "value": "5040",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T17:15:00.000-04:00"
+              },
+              {
+                "value": "5040",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T17:30:00.000-04:00"
+              },
+              {
+                "value": "5040",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T17:45:00.000-04:00"
+              },
+              {
+                "value": "5040",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T18:00:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 176918
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:02146000:00060:00000"
+      },
+      {
+        "sourceInfo": {
+          "siteName": "CATAWBA RIVER NEAR ROCK HILL, SC",
+          "siteCode": [
+            {
+              "value": "02146000",
+              "network": "NWIS",
+              "agencyCode": "USGS"
+            }
+          ],
+          "timeZoneInfo": {
+            "defaultTimeZone": {
+              "zoneOffset": "-05:00",
+              "zoneAbbreviation": "EST"
+            },
+            "daylightSavingsTimeZone": {
+              "zoneOffset": "-04:00",
+              "zoneAbbreviation": "EDT"
+            },
+            "siteUsesDaylightSavingsTime": true
+          },
+          "geoLocation": {
+            "geogLocation": {
+              "srs": "EPSG:4326",
+              "latitude": 34.98486935,
+              "longitude": -80.9739658
+            },
+            "localSiteXY": []
+          },
+          "note": [],
+          "siteType": [],
+          "siteProperty": [
+            {
+              "value": "ST",
+              "name": "siteTypeCd"
+            },
+            {
+              "value": "03050103",
+              "name": "hucCd"
+            },
+            {
+              "value": "45",
+              "name": "stateCd"
+            },
+            {
+              "value": "45091",
+              "name": "countyCd"
+            }
+          ]
+        },
+        "variable": {
+          "variableCode": [
+            {
+              "value": "00065",
+              "network": "NWIS",
+              "vocabulary": "NWIS:UnitValues",
+              "variableID": 45807202,
+              "default": true
+            }
+          ],
+          "variableName": "Gage height, ft",
+          "variableDescription": "Gage height, feet",
+          "valueType": "Derived Value",
+          "unit": {
+            "unitCode": "ft"
+          },
+          "options": {
+            "option": [
+              {
+                "name": "Statistic",
+                "optionCode": "00000"
+              }
+            ]
+          },
+          "note": [],
+          "noDataValue": -999999,
+          "variableProperty": [],
+          "oid": "45807202"
+        },
+        "values": [
+          {
+            "value": [
+              {
+                "value": "5.10",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T13:00:00.000-04:00"
+              },
+              {
+                "value": "5.10",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T13:15:00.000-04:00"
+              },
+              {
+                "value": "5.09",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T13:30:00.000-04:00"
+              },
+              {
+                "value": "5.10",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T13:45:00.000-04:00"
+              },
+              {
+                "value": "5.10",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T14:00:00.000-04:00"
+              },
+              {
+                "value": "5.09",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T14:15:00.000-04:00"
+              },
+              {
+                "value": "5.10",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T14:30:00.000-04:00"
+              },
+              {
+                "value": "5.10",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T14:45:00.000-04:00"
+              },
+              {
+                "value": "5.10",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T15:00:00.000-04:00"
+              },
+              {
+                "value": "5.10",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T15:15:00.000-04:00"
+              },
+              {
+                "value": "5.11",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T15:30:00.000-04:00"
+              },
+              {
+                "value": "5.10",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T15:45:00.000-04:00"
+              },
+              {
+                "value": "5.10",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T16:00:00.000-04:00"
+              },
+              {
+                "value": "5.10",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T16:15:00.000-04:00"
+              },
+              {
+                "value": "5.10",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T16:30:00.000-04:00"
+              },
+              {
+                "value": "5.11",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T16:45:00.000-04:00"
+              },
+              {
+                "value": "5.10",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T17:00:00.000-04:00"
+              },
+              {
+                "value": "5.11",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T17:15:00.000-04:00"
+              },
+              {
+                "value": "5.11",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T17:30:00.000-04:00"
+              },
+              {
+                "value": "5.11",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T17:45:00.000-04:00"
+              },
+              {
+                "value": "5.11",
+                "qualifiers": [
+                  "P"
+                ],
+                "dateTime": "2026-10-17T18:00:00.000-04:00"
+              }
+            ],
+            "qualifier": [
+              {
+                "qualifierCode": "P",
+                "qualifierDescription": "Provisional data subject to revision.",
+                "qualifierID": 0,
+                "network": "NWIS",
+                "vocabulary": "uv_rmk_cd"
+              }
+            ],
+            "qualityControlLevel": [],
+            "method": [
+              {
+                "methodDescription": "",
+                "methodID": 176917
+              }
+            ],
+            "source": [],
+            "offset": [],
+            "sample": [],
+            "censorCode": []
+          }
+        ],
+        "name": "USGS:02146000:00065:00000"
+      }
+    ]
+  }
+}

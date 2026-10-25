@@ -1,0 +1,17 @@
+{
+  "name": "Highwater: hazard readiness for South Carolina's 5th District",
+  "short_name": "Highwater",
+  "description": "Live official alerts, river levels, and plain-language steps for the 8 counties of South Carolina's 5th District. Not an official warning system.",
+  "start_url": "./#/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf8f4",
+  "theme_color": "#faf8f4",
+  "lang": "en-US",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

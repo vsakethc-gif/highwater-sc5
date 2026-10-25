@@ -1,0 +1,967 @@
+{
+  "_note": "Real alerts from api.weather.gov/alerts?area=SC (Oct 2026), one per case: NEW, CON, EXT, CAN. Flash Flood Warning has flashFloodDamageThreat CONSIDERABLE. Long text trimmed.",
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f94aea8a0a0079cbbb528c1f5b196e941cabbabc.001.1",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.02,
+              33.86
+            ],
+            [
+              -79.08,
+              33.93
+            ],
+            [
+              -78.78,
+              34.13
+            ],
+            [
+              -78.66,
+              33.96
+            ],
+            [
+              -79.02,
+              33.86
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f94aea8a0a0079cbbb528c1f5b196e941cabbabc.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.f94aea8a0a0079cbbb528c1f5b196e941cabbabc.001.1",
+        "areaDesc": "Columbus, NC; Horry, SC",
+        "geocode": {
+          "SAME": [
+            "037047",
+            "045051"
+          ],
+          "UGC": [
+            "NCC047",
+            "SCC051"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/NCC047",
+          "https://api.weather.gov/zones/county/SCC051"
+        ],
+        "references": [],
+        "sent": "2026-10-11T11:32:00-04:00",
+        "effective": "2026-10-11T11:32:00-04:00",
+        "onset": "2026-10-11T11:32:00-04:00",
+        "expires": "2026-10-11T12:15:00-04:00",
+        "ends": "2026-10-11T12:15:00-04:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Extreme",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Tornado Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Wilmington NC",
+        "headline": "Tornado Warning issued October 11 at 11:32AM EDT until October 11 at 12:15PM EDT by NWS Wilmington NC",
+        "description": "TORILM\n\nThe National Weather Service in Wilmington has issued a\n\n* Tornado Warning for...\nSouth Central Columbus County in southeastern North Carolina...\nCentral Horry County in northeastern South Carolina...\n\n* Until 1215 PM EDT.\n\n* At 1132 AM EDT, a severe thunderstorm capable of producing a\ntornado was located over Adrian, or 7 miles northeast of Conway,\nmoving northeast at 35 mph.\n\nHAZARD...To …[trimmed]",
+        "instruction": "Move to an interior room on the lowest floor of a well-built building\naway from windows. If you are outdoors, in a mobile home, or in a\nvehicle, move to the closest substantial shelter and protect yourself\nfrom flying debris.\n\nPlease send your reports of hail or wind damage by calling the\nNational Weather Service office in Wilmington at 1 800 697 3901.",
+        "response": "Shelter",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "TORILM"
+          ],
+          "WMOidentifier": [
+            "WFUS52 KILM 111532"
+          ],
+          "eventMotionDescription": [
+            "2026-10-11T15:32:00-00:00...storm...232DEG...28KT...33.92,-79.0"
+          ],
+          "tornadoDetection": [
+            "RADAR INDICATED"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "VTEC": [
+            "/O.NEW.KILM.TO.W.0009.261011T1532Z-261011T1615Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-11T12:15:00-04:00"
+          ],
+          "WEAHandling": [
+            "Imminent Threat"
+          ],
+          "CMAMtext": [
+            "NWS: TORNADO WARNING in this area til 12:15 PM EDT. Take shelter now. Check media."
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "TOR"
+          ],
+          "NationalWeatherService": [
+            "TOW"
+          ]
+        },
+        "replacedBy": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6140e661405f5e2caaebe6820e49e13fe8160a14.001.1",
+        "replacedAt": "2026-10-11T12:05:00-04:00"
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1acbb200c8314703ddbeca7d1577046e55e11c2e.001.1",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -82.39,
+              35.34
+            ],
+            [
+              -82.28,
+              35.58
+            ],
+            [
+              -82.25,
+              35.56
+            ],
+            [
+              -82.21,
+              35.55
+            ],
+            [
+              -82.15,
+              35.52
+            ],
+            [
+              -82.07,
+              35.54
+            ],
+            [
+              -82.03,
+              35.54
+            ],
+            [
+              -82.01,
+              35.55
+            ],
+            [
+              -81.99,
+              35.54
+            ],
+            [
+              -81.98,
+              35.53
+            ],
+            [
+              -81.98,
+              35.41
+            ],
+            [
+              -82.03,
+              35.33
+            ],
+            [
+              -82.13,
+              35.03
+            ],
+            [
+              -82.48,
+              35.06
+            ],
+            [
+              -82.39,
+              35.34
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1acbb200c8314703ddbeca7d1577046e55e11c2e.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.1acbb200c8314703ddbeca7d1577046e55e11c2e.001.1",
+        "areaDesc": "Buncombe, NC; Henderson, NC; Polk, NC; Rutherford, NC; Greenville, SC; Spartanburg, SC",
+        "geocode": {
+          "SAME": [
+            "037021",
+            "037089",
+            "037149",
+            "037161",
+            "045045",
+            "045083"
+          ],
+          "UGC": [
+            "NCC021",
+            "NCC089",
+            "NCC149",
+            "NCC161",
+            "SCC045",
+            "SCC083"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/NCC021",
+          "https://api.weather.gov/zones/county/NCC089",
+          "https://api.weather.gov/zones/county/NCC149",
+          "https://api.weather.gov/zones/county/NCC161",
+          "https://api.weather.gov/zones/county/SCC045",
+          "https://api.weather.gov/zones/county/SCC083"
+        ],
+        "references": [],
+        "sent": "2026-10-11T05:11:00-04:00",
+        "effective": "2026-10-11T05:11:00-04:00",
+        "onset": "2026-10-11T05:11:00-04:00",
+        "expires": "2026-10-11T11:00:00-04:00",
+        "ends": "2026-10-11T11:00:00-04:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Likely",
+        "urgency": "Immediate",
+        "event": "Flash Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Greenville-Spartanburg SC",
+        "headline": "Flash Flood Warning issued October 11 at 5:11AM EDT until October 11 at 11:00AM EDT by NWS Greenville-Spartanburg SC",
+        "description": "FFWGSP\n\nThe National Weather Service in Greenville-Spartanburg has issued a\n\n* Flash Flood Warning for...\nSoutheastern Buncombe County in western North Carolina...\nEastern Henderson County in western North Carolina...\nPolk County in western North Carolina...\nNorthwestern Rutherford County in western North Carolina...\nNortheastern Greenville County in upstate South Carolina...\nNorthwestern Spartanb …[trimmed]",
+        "instruction": "Be especially cautious at night when it is harder to recognize the\ndangers of flooding.\n\nBe aware of your surroundings and do not drive on flooded roads.\n\nThe additional heavy rain will increase the risk of landslides and\ndebris flows, especially in areas where landslides have occurred in\nthe past. Be especially alert if you live near a stream, particularly\nat the base of a mountain or in a cove.  …[trimmed]",
+        "response": "Avoid",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "FFWGSP"
+          ],
+          "WMOidentifier": [
+            "WGUS52 KGSP 110911"
+          ],
+          "flashFloodDetection": [
+            "RADAR INDICATED"
+          ],
+          "flashFloodDamageThreat": [
+            "CONSIDERABLE"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "VTEC": [
+            "/O.NEW.KGSP.FF.W.0024.261011T0911Z-261011T1500Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-11T11:00:00-04:00"
+          ],
+          "WEAHandling": [
+            "Imminent Threat"
+          ],
+          "CMAMtext": [
+            "NWS: FLASH FLOOD WARNING this area til 11:00 AM EDT. Avoid flooded areas."
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "FFW"
+          ],
+          "NationalWeatherService": [
+            "FFW"
+          ]
+        },
+        "replacedBy": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1920921101b484c1607ac0e7227770a3067707c1.001.1",
+        "replacedAt": "2026-10-11T10:40:00-04:00"
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68e8f9b229e36db60df2701668d98d7c0d82b4d0.001.1",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.9,
+              33.84
+            ],
+            [
+              -80.83,
+              33.8
+            ],
+            [
+              -80.85,
+              33.77
+            ],
+            [
+              -80.91,
+              33.8
+            ],
+            [
+              -80.9,
+              33.84
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68e8f9b229e36db60df2701668d98d7c0d82b4d0.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.68e8f9b229e36db60df2701668d98d7c0d82b4d0.001.1",
+        "areaDesc": "Calhoun, SC; Richland, SC",
+        "geocode": {
+          "SAME": [
+            "045017",
+            "045079"
+          ],
+          "UGC": [
+            "SCC017",
+            "SCC079"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/SCC017",
+          "https://api.weather.gov/zones/county/SCC079"
+        ],
+        "references": [],
+        "sent": "2026-10-14T17:06:00-04:00",
+        "effective": "2026-10-14T17:06:00-04:00",
+        "onset": "2026-10-14T17:06:00-04:00",
+        "expires": "2026-10-14T17:21:17-04:00",
+        "ends": "2026-10-14T17:06:00-04:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Minor",
+        "certainty": "Observed",
+        "urgency": "Past",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Columbia SC",
+        "headline": "The Flood Warning has been cancelled.",
+        "description": "The Flood Warning has been cancelled and is no longer in effect.",
+        "instruction": null,
+        "response": "AllClear",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "FLSCAE"
+          ],
+          "WMOidentifier": [
+            "WGUS82 KCAE 142106"
+          ],
+          "NWSheadline": [
+            "FLOOD WARNING IS CANCELLED"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "VTEC": [
+            "/O.CAN.KCAE.FL.W.0004.000000T0000Z-261014T2106Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-14T17:06:00-04:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "FLS"
+          ],
+          "NationalWeatherService": [
+            "FLW"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.be801617233e5156a853d0b10823a296fce1bfe6.001.1",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.9,
+              33.84
+            ],
+            [
+              -80.83,
+              33.8
+            ],
+            [
+              -80.85,
+              33.77
+            ],
+            [
+              -80.91,
+              33.8
+            ],
+            [
+              -80.9,
+              33.84
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.be801617233e5156a853d0b10823a296fce1bfe6.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.be801617233e5156a853d0b10823a296fce1bfe6.001.1",
+        "areaDesc": "Calhoun, SC; Richland, SC",
+        "geocode": {
+          "SAME": [
+            "045017",
+            "045079"
+          ],
+          "UGC": [
+            "SCC017",
+            "SCC079"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/SCC017",
+          "https://api.weather.gov/zones/county/SCC079"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9450a7899d0658981a65fc97e4b915b31eb9bf7d.001.1",
+            "identifier": "urn:oid:2.49.0.1.840.0.9450a7899d0658981a65fc97e4b915b31eb9bf7d.001.1",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-13T21:15:00-04:00"
+          }
+        ],
+        "sent": "2026-10-14T03:54:00-04:00",
+        "effective": "2026-10-14T03:54:00-04:00",
+        "onset": "2026-10-14T03:54:00-04:00",
+        "expires": "2026-10-14T16:00:00-04:00",
+        "ends": "2026-10-16T00:48:00-04:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Columbia SC",
+        "headline": "Flood Warning issued October 14 at 3:54AM EDT until October 16 at 12:48AM EDT by NWS Columbia SC",
+        "description": "...The Flood Warning continues for the following rivers in South\nCarolina...\n\nCongaree River At Congaree River at Congaree NP Near Gadsden\naffecting Calhoun and Richland Counties.\n\nCongaree River At Carolina Eastman affecting Calhoun, Richland and\nLexington Counties.\n\n* WHAT...Minor flooding is occurring and minor flooding is forecast.\n\n* WHERE...Congaree River at Congaree River at Congaree NP Nea …[trimmed]",
+        "instruction": "Most flooding deaths occur in vehicles. Never drive through a flooded\nroadway or around barricades. Turn around, don't drown.\n\nMotorists should not attempt to drive around barricades or drive cars\nthrough flooded areas.\n\nCaution is urged when walking near riverbanks.\n\nAdditional information is available at www.weather.gov.\n\nThe next statement will be issued this afternoon at 400 PM EDT.",
+        "response": "Avoid",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "FLSCAE"
+          ],
+          "WMOidentifier": [
+            "WGUS82 KCAE 140754"
+          ],
+          "NWSheadline": [
+            "FLOOD WARNING REMAINS IN EFFECT UNTIL LATE THURSDAY NIGHT"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "VTEC": [
+            "/O.CON.KCAE.FL.W.0004.000000T0000Z-261016T0448Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-16T00:48:00-04:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "FLS"
+          ],
+          "NationalWeatherService": [
+            "FLW"
+          ]
+        },
+        "replacedBy": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.68e8f9b229e36db60df2701668d98d7c0d82b4d0.001.1",
+        "replacedAt": "2026-10-14T17:06:00-04:00"
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22376f177c3646e80ee4babb11cf2eefd8379349.001.1",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22376f177c3646e80ee4babb11cf2eefd8379349.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.22376f177c3646e80ee4babb11cf2eefd8379349.001.1",
+        "areaDesc": "Bladen, NC; Brunswick, NC; Columbus, NC; New Hanover, NC; Pender, NC; Robeson, NC; Dillon, SC; Horry, SC; Marion, SC; Marlboro, SC",
+        "geocode": {
+          "SAME": [
+            "037017",
+            "037019",
+            "037047",
+            "037129",
+            "037141",
+            "037155",
+            "045033",
+            "045051",
+            "045067",
+            "045069"
+          ],
+          "UGC": [
+            "NCC017",
+            "NCC019",
+            "NCC047",
+            "NCC129",
+            "NCC141",
+            "NCC155",
+            "SCC033",
+            "SCC051",
+            "SCC067",
+            "SCC069"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/NCC017",
+          "https://api.weather.gov/zones/county/NCC019",
+          "https://api.weather.gov/zones/county/NCC047",
+          "https://api.weather.gov/zones/county/NCC129",
+          "https://api.weather.gov/zones/county/NCC141",
+          "https://api.weather.gov/zones/county/NCC155",
+          "https://api.weather.gov/zones/county/SCC033",
+          "https://api.weather.gov/zones/county/SCC051",
+          "https://api.weather.gov/zones/county/SCC067",
+          "https://api.weather.gov/zones/county/SCC069"
+        ],
+        "references": [],
+        "sent": "2026-10-11T09:58:00-04:00",
+        "effective": "2026-10-11T09:58:00-04:00",
+        "onset": "2026-10-11T09:58:00-04:00",
+        "expires": "2026-10-11T17:00:00-04:00",
+        "ends": "2026-10-11T17:00:00-04:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Extreme",
+        "certainty": "Possible",
+        "urgency": "Future",
+        "event": "Tornado Watch",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Wilmington NC",
+        "headline": "Tornado Watch issued October 11 at 9:58AM EDT until October 11 at 5:00PM EDT by NWS Wilmington NC",
+        "description": "THE NATIONAL WEATHER SERVICE HAS ISSUED TORNADO WATCH 680 IN\nEFFECT UNTIL 5 PM EDT THIS AFTERNOON FOR THE FOLLOWING AREAS\n\nIN NORTH CAROLINA THIS WATCH INCLUDES 6 COUNTIES\n\nIN SOUTHEAST NORTH CAROLINA\n\nBLADEN                BRUNSWICK             COLUMBUS\nNEW HANOVER           PENDER                ROBESON\n\nIN SOUTH CAROLINA THIS WATCH INCLUDES 4 COUNTIES\n\nIN NORTHEAST SOUTH CAROLINA\n\nDILLON        …[trimmed]",
+        "instruction": null,
+        "response": "Monitor",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "WCNILM"
+          ],
+          "WMOidentifier": [
+            "WWUS62 KILM 111358"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "VTEC": [
+            "/O.NEW.KILM.TO.A.0680.261011T1358Z-261011T2100Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-11T17:00:00-04:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "TOA"
+          ],
+          "NationalWeatherService": [
+            "TOA"
+          ]
+        },
+        "replacedBy": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.87bb5c5e4b05c1fbfdba1b799d4bfd1e21407a51.001.1",
+        "replacedAt": "2026-10-11T14:28:00-04:00"
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eb1083647d18a7abb186efc3e57ced5f78c72fa3.002.1",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eb1083647d18a7abb186efc3e57ced5f78c72fa3.002.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.eb1083647d18a7abb186efc3e57ced5f78c72fa3.002.1",
+        "areaDesc": "Avery; Yancey; Mitchell; Haywood; Buncombe; Transylvania; Henderson; Caldwell Mountains; Greater Caldwell; Burke Mountains; Greater Burke; McDowell Mountains; Eastern McDowell; Rutherford Mountains; Greater Rutherford; Polk Mountains; Eastern Polk; Greenville Mountains; Northern Spartanburg; Southern Spartanburg",
+        "geocode": {
+          "SAME": [
+            "037011",
+            "037199",
+            "037121",
+            "037087",
+            "037021",
+            "037175",
+            "037089",
+            "037027",
+            "037023",
+            "037111",
+            "037161",
+            "037149",
+            "045045",
+            "045083"
+          ],
+          "UGC": [
+            "NCZ033",
+            "NCZ049",
+            "NCZ050",
+            "NCZ052",
+            "NCZ053",
+            "NCZ064",
+            "NCZ065",
+            "NCZ501",
+            "NCZ502",
+            "NCZ503",
+            "NCZ504",
+            "NCZ505",
+            "NCZ506",
+            "NCZ507",
+            "NCZ508",
+            "NCZ509",
+            "NCZ510",
+            "SCZ103",
+            "SCZ108",
+            "SCZ109"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/forecast/NCZ033",
+          "https://api.weather.gov/zones/forecast/NCZ049",
+          "https://api.weather.gov/zones/forecast/NCZ050",
+          "https://api.weather.gov/zones/forecast/NCZ052",
+          "https://api.weather.gov/zones/forecast/NCZ053",
+          "https://api.weather.gov/zones/forecast/NCZ064",
+          "https://api.weather.gov/zones/forecast/NCZ065",
+          "https://api.weather.gov/zones/forecast/NCZ501",
+          "https://api.weather.gov/zones/forecast/NCZ502",
+          "https://api.weather.gov/zones/forecast/NCZ503",
+          "https://api.weather.gov/zones/forecast/NCZ504",
+          "https://api.weather.gov/zones/forecast/NCZ505",
+          "https://api.weather.gov/zones/forecast/NCZ506",
+          "https://api.weather.gov/zones/forecast/NCZ507",
+          "https://api.weather.gov/zones/forecast/NCZ508",
+          "https://api.weather.gov/zones/forecast/NCZ509",
+          "https://api.weather.gov/zones/forecast/NCZ510",
+          "https://api.weather.gov/zones/forecast/SCZ103",
+          "https://api.weather.gov/zones/forecast/SCZ108",
+          "https://api.weather.gov/zones/forecast/SCZ109"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1",
+            "identifier": "urn:oid:2.49.0.1.840.0.77df45fd5840fe2e20a5dd1a83fb21d9e0838f86.001.1",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-11T06:13:00-04:00"
+          }
+        ],
+        "sent": "2026-10-11T09:50:00-04:00",
+        "effective": "2026-10-11T09:50:00-04:00",
+        "onset": "2026-10-11T09:50:00-04:00",
+        "expires": "2026-10-11T14:00:00-04:00",
+        "ends": "2026-10-11T14:00:00-04:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Possible",
+        "urgency": "Future",
+        "event": "Flood Watch",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Greenville-Spartanburg SC",
+        "headline": "Flood Watch issued October 11 at 9:50AM EDT until October 11 at 2:00PM EDT by NWS Greenville-Spartanburg SC",
+        "description": "* WHAT...Flash flooding caused by excessive rainfall continues to be\npossible.\n\n* WHERE...Portions of western North Carolina, including the following\nareas, Avery, Buncombe, Burke Mountains, Caldwell Mountains,\nEastern McDowell, Eastern Polk, Greater Burke, Greater Caldwell,\nGreater Rutherford, Haywood, Henderson, McDowell Mountains,\nMitchell, Polk Mountains, Rutherford Mountains, Transylvania and …[trimmed]",
+        "instruction": "A Flood Watch for flash flooding means there is a potential for rapid\nonset flooding based on current forecasts. Flash flooding is a very\ndangerous situation and may impact areas that do not typically flood.\nPlease monitor the latest forecasts and be prepared to take action\nquickly should Flash Flood Warnings be issued.\n\nRainfall of more than five inches in similar storms has been\nassociated with  …[trimmed]",
+        "response": "Prepare",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "FFAGSP"
+          ],
+          "WMOidentifier": [
+            "WGUS62 KGSP 111350"
+          ],
+          "NWSheadline": [
+            "FLOOD WATCH REMAINS IN EFFECT UNTIL 2 PM EDT THIS AFTERNOON"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "VTEC": [
+            "/O.CON.KGSP.FA.A.0003.000000T0000Z-261011T1800Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-11T14:00:00-04:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "FFA"
+          ],
+          "NationalWeatherService": [
+            "FAA"
+          ]
+        },
+        "replacedBy": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e54c9e89cd8721e960b0b9135a8a89dd3e6cecb.001.1",
+        "replacedAt": "2026-10-11T13:39:00-04:00"
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e6b2569386c045c59c504282d8b531e5072177b2.001.1",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -81.06,
+              34.04
+            ],
+            [
+              -81,
+              33.96
+            ],
+            [
+              -81.06,
+              33.94
+            ],
+            [
+              -81.11,
+              34.01
+            ],
+            [
+              -81.06,
+              34.04
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e6b2569386c045c59c504282d8b531e5072177b2.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.e6b2569386c045c59c504282d8b531e5072177b2.001.1",
+        "areaDesc": "Lexington, SC; Richland, SC",
+        "geocode": {
+          "SAME": [
+            "045063",
+            "045079"
+          ],
+          "UGC": [
+            "SCC063",
+            "SCC079"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/SCC063",
+          "https://api.weather.gov/zones/county/SCC079"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.515a4d7892c659226e3e699848776a063c9c1887.001.1",
+            "identifier": "urn:oid:2.49.0.1.840.0.515a4d7892c659226e3e699848776a063c9c1887.001.1",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-13T11:08:00-04:00"
+          }
+        ],
+        "sent": "2026-10-13T21:15:00-04:00",
+        "effective": "2026-10-13T21:15:00-04:00",
+        "onset": "2026-10-13T21:15:00-04:00",
+        "expires": "2026-10-14T09:15:00-04:00",
+        "ends": "2026-10-15T08:00:00-04:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Minor",
+        "certainty": "Observed",
+        "urgency": "Expected",
+        "event": "Flood Advisory",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Columbia SC",
+        "headline": "Flood Advisory issued October 13 at 9:15PM EDT until October 15 at 8:00AM EDT by NWS Columbia SC",
+        "description": "...The Flood Advisory is extended for the following rivers in South\nCarolina...\n\nCongaree River At Congaree River at Columbia affecting Lexington\nand Richland Counties.\n\n* WHAT...Flooding caused by excessive rainfall continues.\n\n* WHERE...Congaree River at Congaree River at Columbia.\n\n* WHEN...Until Thursday morning.\n\n* IMPACTS...At 10.0 feet, Flooding occurs on parts of the Cayce and\nWest Columbi …[trimmed]",
+        "instruction": "Caution is urged when walking near riverbanks.\n\nAdditional information is available at www.weather.gov.\n\nThe next statement will be issued Wednesday morning at 915 AM EDT.",
+        "response": "Avoid",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "FLSCAE"
+          ],
+          "WMOidentifier": [
+            "WGUS82 KCAE 140115 RRA"
+          ],
+          "NWSheadline": [
+            "FLOOD ADVISORY NOW IN EFFECT UNTIL THURSDAY MORNING"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "VTEC": [
+            "/O.EXT.KCAE.FL.Y.0001.000000T0000Z-261015T1200Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-15T08:00:00-04:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "NWS"
+          ],
+          "NationalWeatherService": [
+            "FLY"
+          ]
+        },
+        "replacedBy": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.348f3697f8760b84dff4bc823647d136104a2880.001.1",
+        "replacedAt": "2026-10-14T03:54:00-04:00"
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d6146603ed68c1bf7a511304c208a89e5c61ef5.001.1",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d6146603ed68c1bf7a511304c208a89e5c61ef5.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.1d6146603ed68c1bf7a511304c208a89e5c61ef5.001.1",
+        "areaDesc": "Inland Chatham; Coastal Chatham; Beaufort; Coastal Colleton; Charleston; Coastal Jasper; Tidal Berkeley",
+        "geocode": {
+          "SAME": [
+            "013051",
+            "045013",
+            "045029",
+            "045019",
+            "045053",
+            "045015"
+          ],
+          "UGC": [
+            "GAZ218",
+            "GAZ219",
+            "SCZ148",
+            "SCZ149",
+            "SCZ150",
+            "SCZ151",
+            "SCZ152"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/forecast/GAZ218",
+          "https://api.weather.gov/zones/forecast/GAZ219",
+          "https://api.weather.gov/zones/forecast/SCZ148",
+          "https://api.weather.gov/zones/forecast/SCZ149",
+          "https://api.weather.gov/zones/forecast/SCZ150",
+          "https://api.weather.gov/zones/forecast/SCZ151",
+          "https://api.weather.gov/zones/forecast/SCZ152"
+        ],
+        "references": [],
+        "sent": "2026-10-17T04:53:00-04:00",
+        "effective": "2026-10-17T04:53:00-04:00",
+        "onset": "2026-10-17T04:53:00-04:00",
+        "expires": "2026-10-17T20:00:00-04:00",
+        "ends": null,
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Moderate",
+        "certainty": "Observed",
+        "urgency": "Expected",
+        "event": "Special Weather Statement",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Charleston SC",
+        "headline": "Special Weather Statement issued October 17 at 4:53AM EDT by NWS Charleston SC",
+        "description": "Gusty north winds will impact the region today in the wake of a\nstrong cold front. Winds on some of the taller bridges and elevated\nroadways around the Charleston, Beaufort and Savannah Metro Areas and\nnearby barrier islands, could see gusts as high as 40 mph at times\nmaking for hazardous driving conditions.\n\nSome of these bridges include the Ravenel Bridge, the Don Holt\nBridge, the James B. Edwar …[trimmed]",
+        "instruction": "Stay tuned to NOAA Weather Radio All Hazards, TV or your local news\nsource for the latest information from the National Weather Service.",
+        "response": "Execute",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "SPSCHS"
+          ],
+          "WMOidentifier": [
+            "WWUS82 KCHS 170853"
+          ],
+          "NWSheadline": [
+            "HAZARDOUS WINDS POSSIBLE ON AREA BRIDGES THROUGH THIS EVENING"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "SPS"
+          ],
+          "NationalWeatherService": [
+            "SPS"
+          ]
+        }
+      }
+    }
+  ]
+}

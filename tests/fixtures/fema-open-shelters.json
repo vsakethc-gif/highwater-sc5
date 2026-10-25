@@ -1,0 +1,66 @@
+{
+  "_note": "Real response, gis.fema.gov NSS/OpenShelters FeatureServer/0. No SC shelters were open on 2026-10-17 (query state=SC returned 0); these 2 records are from elsewhere.",
+  "sc_query_count": 0,
+  "features": [
+    {
+      "attributes": {
+        "objectid": 2096479,
+        "shelter_id": 71015,
+        "shelter_name": "George Washington High School",
+        "address": "298 Washington Drive",
+        "city": "Mangilao",
+        "state": "GU",
+        "zip": "96913",
+        "shelter_status": "OPEN",
+        "evacuation_capacity": 100,
+        "post_impact_capacity": 50,
+        "total_population": 0,
+        "hours_open": null,
+        "hours_close": null,
+        "org_name": "TERRITORY OF GUAM",
+        "org_id": 119274,
+        "match_type": "A",
+        "subfacility_code": "EMEREVAC",
+        "ada_compliant": " ",
+        "pet_accommodations_code": " ",
+        "wheelchair_accessible": " ",
+        "latitude": 13.43800646,
+        "longitude": 144.80558849
+      },
+      "geometry": {
+        "x": 144.8055884900001,
+        "y": 13.438006462000033
+      }
+    },
+    {
+      "attributes": {
+        "objectid": 2096480,
+        "shelter_id": 71013,
+        "shelter_name": "Astumbo Elementary School",
+        "address": "255 Chalan Hachon St",
+        "city": "Dededo",
+        "state": "GU",
+        "zip": "96929",
+        "shelter_status": "OPEN",
+        "evacuation_capacity": 75,
+        "post_impact_capacity": 75,
+        "total_population": 0,
+        "hours_open": null,
+        "hours_close": null,
+        "org_name": "TERRITORY OF GUAM",
+        "org_id": 119274,
+        "match_type": "A",
+        "subfacility_code": "EMEREVAC",
+        "ada_compliant": " ",
+        "pet_accommodations_code": " ",
+        "wheelchair_accessible": " ",
+        "latitude": 13.55315925,
+        "longitude": 144.84776876
+      },
+      "geometry": {
+        "x": 144.84776875900002,
+        "y": 13.553159251000068
+      }
+    }
+  ]
+}

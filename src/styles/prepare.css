@@ -1,0 +1,135 @@
+/*
+ * prepare.css — the "Get ready" page and print styles for every page.
+ * Uses only variables from tokens.css.
+ */
+
+.jump-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin: var(--space-3) 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jump-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap-target);
+  padding: 0 var(--space-2);
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  text-decoration: none;
+}
+
+.jump-links a:hover {
+  background: var(--color-accent-tint);
+}
+
+.prepare-grid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+@media (min-width: 64rem) {
+  .prepare-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.prepare-card {
+  padding: var(--space-3);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  scroll-margin-top: var(--space-2);
+}
+
+.prepare-card > * + * {
+  margin-top: var(--space-2);
+}
+
+.prepare-card__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-xl);
+}
+
+.prepare-card__level {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-bottom: var(--space-1);
+  font-size: var(--text-md);
+}
+
+.prepare-card__note {
+  padding: var(--space-1) var(--space-2);
+  border-left: 4px solid var(--color-accent);
+  background: var(--color-accent-tint);
+  font-weight: var(--weight-semibold);
+}
+
+.checklist {
+  padding-left: var(--space-3);
+}
+
+.checklist li + li {
+  margin-top: var(--space-0);
+}
+
+/* ---------- Print: plain, black on white, no navigation or buttons ---------- */
+@media print {
+  .site-header,
+  .site-nav,
+  .tab-bar,
+  .skip-link,
+  .no-print,
+  .banner--info,
+  .location-bar,
+  .quick-actions,
+  .header-button,
+  button {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    padding-bottom: 0;
+    color: #000;
+    font-size: 11pt;
+  }
+
+  .prepare-card,
+  .status-card,
+  .alert-row,
+  .gauge-row {
+    break-inside: avoid;
+  }
+
+  .prepare-grid {
+    display: block;
+  }
+
+  .prepare-card {
+    margin-bottom: 12pt;
+    border-color: #999;
+  }
+
+  /* Show where links go, since paper can't be clicked. */
+  .prepare-card a[href^="http"]::after,
+  .guidance a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    word-break: break-all;
+  }
+
+  .site-footer {
+    margin-top: 12pt;
+    border-top: 1px solid #999;
+  }
+}

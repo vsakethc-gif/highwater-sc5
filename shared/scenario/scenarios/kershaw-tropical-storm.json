@@ -1,0 +1,28 @@
+{
+  "id": "kershaw-tropical-storm",
+  "title": "Tropical storm moving inland over Kershaw County",
+  "summary": "A hurricane weakens to a tropical storm as it moves inland, like Helene in 2024. NWS issues a Tropical Storm Warning and a Flood Watch. Shows two hazards at once.",
+  "county": "45055",
+  "alerts": [
+    {
+      "event": "Tropical Storm Warning",
+      "headline": "TROPICAL STORM WARNING IN EFFECT",
+      "description": "SIMULATED ALERT. * WIND: Tropical storm force winds of 40 to 55 mph with gusts to 70 mph are expected.\n* FLOODING RAIN: Additional rainfall of 4 to 6 inches, locally higher.\n* TORNADO: A few tornadoes are possible.",
+      "instruction": "SIMULATED. Listen to local officials for recommended preparedness actions, including possible evacuation. Ensure you have an emergency kit and a plan.",
+      "county_fips": ["45055", "45061", "45039"],
+      "startOffsetMin": -180,
+      "endOffsetMin": 1440
+    },
+    {
+      "event": "Flood Watch",
+      "headline": "FLOOD WATCH IN EFFECT THROUGH SATURDAY EVENING",
+      "description": "SIMULATED ALERT. * WHAT...Flooding caused by excessive rainfall continues to be possible.\n* WHERE...Kershaw and Lee counties.",
+      "instruction": "SIMULATED. You should monitor later forecasts and be alert for possible Flood Warnings.",
+      "county_fips": ["45055", "45061"],
+      "startOffsetMin": -180,
+      "endOffsetMin": 2160
+    }
+  ],
+  "gauges": {},
+  "rain": { "next24h_in": 4.8, "next48h_in": 5.6 }
+}
