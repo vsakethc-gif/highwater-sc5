@@ -22,7 +22,7 @@ Deadline: **Monday, October 26, 2026** [CHECK the exact time and time zone on co
 | What | Link |
 |---|---|
 | Web app | https://vsakethc-gif.github.io/highwater-sc5/ |
-| Demo video | [ADD VIDEO LINK] |
+| Demo video | https://youtu.be/_xY-lvTFR6s |
 | Code (GitHub) | https://github.com/vsakethc-gif/highwater-sc5 |
 
 - [ ] The GitHub repo is **public**: open it in an incognito window. (It was public on Oct 24.)

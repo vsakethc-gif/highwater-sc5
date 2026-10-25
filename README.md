@@ -5,7 +5,7 @@ Highwater is a free app that shows people in South Carolina's 5th Congressional 
 > Highwater is not an official warning system. Follow instructions from local officials. In an emergency, call 911.
 
 - **Try it (works on any phone or computer):** https://vsakethc-gif.github.io/highwater-sc5/
-- **Demo video:** [ADD VIDEO LINK]
+- **Demo video:** https://youtu.be/_xY-lvTFR6s
 - **How it decides:** [METHODOLOGY.md](METHODOLOGY.md) (also the "How it works" page in the app)
 - **Full walkthrough:** [FINAL_SUMMARY.md](FINAL_SUMMARY.md)
 

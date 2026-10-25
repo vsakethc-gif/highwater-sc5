@@ -4,7 +4,7 @@ These are drafts for the Congressional App Challenge form. Each answer comes in 
 
 - **Web app (works on any phone or computer):** https://vsakethc-gif.github.io/highwater-sc5/
 - **Code:** https://github.com/vsakethc-gif/highwater-sc5
-- **Demo video:** [ADD VIDEO LINK]
+- **Demo video:** https://youtu.be/_xY-lvTFR6s
 - **Deadline:** Monday, October 26, 2026 [CHECK the exact time on the official site]. I plan to submit Sunday, October 25.
 
 ---
