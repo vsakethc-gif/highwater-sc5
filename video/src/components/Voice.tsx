@@ -44,3 +44,24 @@ export const Captions: React.FC = () => {
     </div>
   );
 };
+
+/**
+ * Background music: "Inspired" by Kevin MacLeod (incompetech.com, CC BY 4.0), kept about 18 dB under
+ * my voice. It fades in, dips lower for the Danger and tornado moments so they feel serious, comes
+ * back up, and fades out at the end.
+ */
+export const Music: React.FC = () => {
+  const { fps } = useVideoConfig();
+  const at = (id: (typeof TIMELINE)[number]['id']) => TIMELINE.find((s) => s.id === id)!;
+  const danger = at('scenario').start + 10.5;
+  const calm = at('tornado').start + at('tornado').duration;
+  const end = TIMELINE[TIMELINE.length - 1].start + TIMELINE[TIMELINE.length - 1].duration;
+  const BED = 0.055;
+  const LOW = 0.028;
+  return (
+    <Audio
+      src={staticFile('footage/music.wav')}
+      volume={(f) => interpolate(f / fps, [0, 2.5, danger, danger + 1.2, calm, calm + 1.5, end - 3, end], [0, BED, BED, LOW, LOW, BED, BED, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })}
+    />
+  );
+};

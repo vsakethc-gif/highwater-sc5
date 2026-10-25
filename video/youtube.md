@@ -37,7 +37,8 @@ Chapters
 2:22 End
 
 Credits
-Imagery: NOAA/NESDIS (GOES satellite image of Helene) and USGS (Helene rain and river animation), both U.S. government works. Facts: SC Emergency Management Division, USGS river gauge data. App footage: real recordings of the HighWater app. Voice: my own. No music.
+Imagery: NOAA/NESDIS (GOES satellite image of Helene) and USGS (Helene rain and river animation), both U.S. government works. Facts: SC Emergency Management Division, USGS river gauge data. App footage: real recordings of the HighWater app. Voice: my own.
+Music: "Inspired" by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 License, http://creativecommons.org/licenses/by/4.0/
 
 ## Tags
 

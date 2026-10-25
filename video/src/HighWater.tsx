@@ -8,7 +8,7 @@
  */
 import { AbsoluteFill, Series } from 'remotion';
 import { Stage } from './components/Stage';
-import { Captions, VoiceTrack } from './components/Voice';
+import { Captions, Music, VoiceTrack } from './components/Voice';
 import { FPS, pieceAt, sceneLength, type Shot } from './edit';
 import { AppScene } from './scenes/AppScene';
 import { Built, EndCard, HowItWorks, Learned, NameThird, SelfieCard } from './scenes/Cards';
@@ -153,6 +153,7 @@ export const HighWater: React.FC<{ name: string }> = ({ name }) => {
           <EndCard />
         </Series.Sequence>
       </Series>
+      <Music />
       <VoiceTrack />
       <Captions />
     </AbsoluteFill>

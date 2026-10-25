@@ -30,7 +30,11 @@ My own voice, from a video of me reading the script (I also appear on camera at 
 
 ## Music
 
-None yet. [ADD the track, its source and license if you choose one, for example from the YouTube Audio Library]
+"Inspired" by Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
+
+Mixed about 16 to 18 dB under the voice, lower during the Danger and tornado moments.
 
 ## Software
 
