@@ -8,7 +8,7 @@
  */
 import { Audio } from '@remotion/media';
 import { interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
-import { CAPTIONS, FPS, TIMELINE } from '../edit';
+import { CAPTIONS, FPS, TIMELINE, VOICE_FILE } from '../edit';
 import { color, font } from '../theme';
 
 const FADE = 0.06;
@@ -21,9 +21,9 @@ export const VoiceTrack: React.FC = () => (
         return (
           <Sequence key={`${s.id}-${p.in}`} from={Math.round((s.start + p.at) * FPS)} durationInFrames={Math.round(len * FPS)} layout="none">
             <Audio
-              src={staticFile('footage/voice.wav')}
+              src={staticFile(VOICE_FILE)}
               trimBefore={Math.round(p.in * FPS)}
-              volume={(f) => interpolate(f / FPS, [0, FADE, len - FADE, len], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })}
+              volume={(f) => interpolate(f / FPS, [0, FADE, len - FADE, len], [0, p.gain ?? 1, p.gain ?? 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })}
             />
           </Sequence>
         );

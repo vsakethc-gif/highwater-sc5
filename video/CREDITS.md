@@ -26,7 +26,7 @@ All app shots are the real HighWater phone app. Nothing on screen is recreated o
 
 ## Voice
 
-My own voice, recorded during my phone screen recording. Pauses and some lines are cut out, steady background noise is reduced (`video/scripts/denoise.mjs`, spectral gating), and the volume is evened out. No AI or text-to-speech voice is used.
+My own voice, from a video of me reading the script (I also appear on camera at the start of the intro). Retakes and pauses are cut out, steady background noise and low rumble are reduced (`video/scripts/denoise.mjs`, spectral gating), each line's volume is evened out, and the overall level is set to about −16 LUFS. No AI or text-to-speech voice is used.
 
 ## Music
 

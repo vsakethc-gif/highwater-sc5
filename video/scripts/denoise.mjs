@@ -102,7 +102,8 @@ for (let f = 0; f < frames; f++) {
   const gain = new Float32Array(bins);
   for (let b = 0; b < bins; b++) {
     const snr = mags[f][b] / (noise[b] * MARGIN + 1e-9);
-    const g = snr >= 1 ? 1 : REDUCE + (1 - REDUCE) * snr ** 4;
+    // Below about 80 Hz there's only rumble (room, handling, traffic), never voice: turn it down.
+    const g = (b * fmt.rate) / N < 80 ? REDUCE : snr >= 1 ? 1 : REDUCE + (1 - REDUCE) * snr ** 4;
     // Open quickly when the voice starts, close slowly after it stops.
     gain[b] = g > prev[b] ? g : prev[b] * 0.7 + g * 0.3;
   }

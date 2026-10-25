@@ -19,9 +19,8 @@ const CARDS = [
 export const Problem: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  // The cards hold still for an extra 2.3 s (from 6 s) so the voiceover can finish before they gather.
-  const raw = frame / fps;
-  const t = raw < 6 ? raw : raw < 8.3 ? 6 : raw - 2.3;
+  // The scene's moments were designed for 16 s; it plays 1.2x faster to fit my voiceover.
+  const t = (frame / fps) * 1.2;
   // 0–8 s: scattered cards. 8–10.5 s: they slide to the center and fade. 9.5–14 s: map draws in.
   const gather = interpolate(t, [8, 10.5], [0, 1], { ...clamp, easing: ease.inOut });
   const cardsOut = interpolate(t, [9.8, 10.6], [1, 0], clamp);

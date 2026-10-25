@@ -2,7 +2,9 @@
  * Cards.tsx — the text scenes: the name lower-third (intro overlay), "how it works", "how I built it",
  * "what I learned", and the end card. They sit on the moving Stage.
  */
-import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { Video } from '@remotion/media';
+import { AbsoluteFill, interpolate, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { PHONE_H, PHONE_W } from '../components/Phone';
 import { clamp, color, ease, font } from '../theme';
 
 const useT = () => {
@@ -85,8 +87,8 @@ export const Built: React.FC = () => {
 };
 
 /** What I learned, in my own words, shown on screen word by word. */
-const LESSON = 'The best apps are ones that are simple and solve important problems, not the ones that have thousands of different features.';
-export const Learned: React.FC<{ quoteAt: number }> = ({ quoteAt }) => {
+const LESSON = 'The best apps are the ones that are simple and solve important problems, not the ones that have thousands of different features.';
+export const Learned: React.FC<{ quoteAt: number; step?: number }> = ({ quoteAt, step = 0.17 }) => {
   const t = useT();
   return (
     <AbsoluteFill style={{ background: 'transparent', padding: '0 180px', justifyContent: 'center' }}>
@@ -95,7 +97,7 @@ export const Learned: React.FC<{ quoteAt: number }> = ({ quoteAt }) => {
       </div>
       <div style={{ fontFamily: font.display, fontWeight: 600, fontSize: 80, lineHeight: 1.15, color: color.ink, marginTop: 30, maxWidth: 1500 }}>
         {`“${LESSON}”`.split(' ').map((word, i) => {
-          const k = interpolate(t, [quoteAt + i * 0.17, quoteAt + i * 0.17 + 0.4], [0, 1], { ...clamp, easing: ease.out });
+          const k = interpolate(t, [quoteAt + i * step, quoteAt + i * step + 0.4], [0, 1], { ...clamp, easing: ease.out });
           return (
             <span key={i} style={{ display: 'inline-block', opacity: k, translate: `0 ${(1 - k) * 28}px`, marginRight: 22 }}>
               {word}
@@ -104,6 +106,23 @@ export const Learned: React.FC<{ quoteAt: number }> = ({ quoteAt }) => {
         })}
       </div>
     </AbsoluteFill>
+  );
+};
+
+/**
+ * The intro's first seconds: me on camera saying who I am, in a card where the phone sits, before it
+ * fades to the app. `from` is where to start in public/footage/selfie.mp4 (the clip is muted; my
+ * voice comes from the cleaned voice track).
+ */
+export const SelfieCard: React.FC<{ from: number; until: number }> = ({ from, until }) => {
+  const t = useT();
+  const { fps } = useVideoConfig();
+  const o = interpolate(t, [0, 0.5, until - 0.4, until], [0, 1, 1, 0], clamp);
+  if (t > until) return null;
+  return (
+    <div style={{ position: 'absolute', left: Math.round(960 - (PHONE_W + 24) / 2), top: 50, width: PHONE_W + 24, height: PHONE_H + 24, borderRadius: 48, overflow: 'hidden', opacity: o, border: `2px solid ${color.hairline}`, background: '#000', scale: interpolate(t, [0, until], [1, 1.03], clamp) }}>
+      <Video src={staticFile('footage/selfie.mp4')} trimBefore={Math.round(from * fps)} muted style={{ height: PHONE_H + 24, width: ((PHONE_H + 24) * 9) / 16, marginLeft: -(((PHONE_H + 24) * 9) / 16 - (PHONE_W + 24)) / 2 }} />
+    </div>
   );
 };
 

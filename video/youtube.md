@@ -1,6 +1,6 @@
 # YouTube upload
 
-**File:** `video/out/highwater-demo.mp4` (2:45, 1920 × 1080)
+**File:** `video/out/highwater-demo.mp4` (2:30, 1920 × 1080)
 **Thumbnail:** `video/out/thumbnail.png` (1280 × 720)
 **Captions:** `video/out/highwater-demo.srt`. Upload it under Subtitles → Upload file → "With timing". The captions are also burned into the video.
 **Visibility:** Public (the Challenge needs a public link). Audience: "No, it's not made for kids."
@@ -24,17 +24,17 @@ Built with TypeScript, React Native and Expo, Vite, MapLibre, Supabase and Cloud
 
 Chapters
 0:00 Hurricane Helene in South Carolina
-0:10 The problem
-0:28 What HighWater is
-0:44 Live status for York County
-1:05 Scenario Mode: storm replay and Helene (simulation)
-1:31 Tornado warning: take shelter
-1:39 District map
-1:53 Report a problem
-2:07 How it works
-2:19 How I built it
-2:30 What I learned
-2:37 End
+0:09 The problem
+0:22 What HighWater is
+0:39 Live status for York County
+0:56 Scenario Mode: storm replay and Helene (simulation)
+1:17 Tornado warning: take shelter
+1:27 District map
+1:39 Report a problem
+1:52 How it works
+2:00 How I built it
+2:12 What I learned
+2:22 End
 
 Credits
 Imagery: NOAA/NESDIS (GOES satellite image of Helene) and USGS (Helene rain and river animation), both U.S. government works. Facts: SC Emergency Management Division, USGS river gauge data. App footage: real recordings of the HighWater app. Voice: my own. No music.

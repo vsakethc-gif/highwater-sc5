@@ -11,7 +11,7 @@ import { Stage } from './components/Stage';
 import { Captions, VoiceTrack } from './components/Voice';
 import { FPS, pieceAt, sceneLength, type Shot } from './edit';
 import { AppScene } from './scenes/AppScene';
-import { Built, EndCard, HowItWorks, Learned, NameThird } from './scenes/Cards';
+import { Built, EndCard, HowItWorks, Learned, NameThird, SelfieCard } from './scenes/Cards';
 import { ColdOpen } from './scenes/ColdOpen';
 import { Problem } from './scenes/Problem';
 import { color } from './theme';
@@ -22,16 +22,16 @@ const frames = (id: Shot['id']) => Math.round(sceneLength(id) * FPS);
 const GLOW = { normal: '#0F4A5C', watch: '#5C4A0C', warning: '#6E3410', danger: '#701430', calm: '#16384A' };
 const WORD = { normal: color.normal, watch: color.watch, warning: color.warning, danger: color.danger };
 
-// The storm replay plays 1.3x from 4.5 s into the scene; in the clip the level reaches Watch at
+// The storm replay plays 1.6x from 4 s into the scene; in the clip the level reaches Watch at
 // 3.25 s, Warning at 7.5 s and Danger at 11.75 s (measured from the footage's colors).
-const STORM_START = 4.5;
-const STORM_RATE = 1.3;
+const STORM_START = 4.0;
+const STORM_RATE = 1.6;
 const stormAt = (clipT: number) => STORM_START + clipT / STORM_RATE;
 const [WATCH, WARNING, DANGER] = [stormAt(3.25), stormAt(7.5), stormAt(11.75)];
 
 export const HighWater: React.FC<{ name: string }> = ({ name }) => {
   const live2 = pieceAt('live', 1);
-  const helene = pieceAt('scenario', 2);
+  const helene = pieceAt('scenario', 3);
   return (
     <AbsoluteFill style={{ background: color.bg }}>
       <Series>
@@ -47,14 +47,19 @@ export const HighWater: React.FC<{ name: string }> = ({ name }) => {
             glow={[{ t: 0, v: GLOW.normal }]}
             word={[{ t: 0.3, v: 'HighWater' }]}
             wordColor={[{ t: 0, v: color.accent }]}
-            extra={<NameThird name={name} />}
+            extra={
+              <>
+                <SelfieCard from={1.38} until={4.4} />
+                <NameThird name={name} />
+              </>
+            }
           />
         </Series.Sequence>
         <Series.Sequence name="Live status" durationInFrames={frames('live')}>
           <AppScene
             shots={[
               { at: 0, clip: 'footage/app-live.mp4', from: 0.6, freeze: true, camera: [{ t: 0, s: 1, x: 390, y: 844 }, { t: 8, s: 1.12, x: 0, y: 600 }] },
-              { at: live2 - 0.3, clip: 'footage/app-live.mp4', from: 1.4, rate: 1.1 },
+              { at: live2 - 0.3, clip: 'footage/app-live.mp4', from: 2.0, rate: 1.4 },
             ]}
             glow={[{ t: 0, v: GLOW.normal }]}
             word={[{ t: 0.2, v: 'LIVE' }]}
@@ -62,8 +67,8 @@ export const HighWater: React.FC<{ name: string }> = ({ name }) => {
             pulses={[0.4]}
             callouts={[
               { label: 'Normal · Watch · Warning · Danger', at: 2.4, until: live2 - 0.4, point: [260, 330] },
-              { label: 'Every reason, with its source', at: live2 + 1.0, until: live2 + 3.6, point: [300, 1000] },
-              { label: 'A real USGS river gauge', at: live2 + 8.9, until: live2 + 11.4, point: [420, 720] },
+              { label: 'Every reason, with its source', at: live2 + 0.4, until: live2 + 2.8, point: [300, 1000] },
+              { label: 'A real USGS river gauge', at: live2 + 6.4, until: live2 + 9.3, point: [420, 720] },
             ]}
           />
         </Series.Sequence>
@@ -81,8 +86,8 @@ export const HighWater: React.FC<{ name: string }> = ({ name }) => {
             pulses={[WATCH, WARNING, DANGER]}
             flashAt={[DANGER, helene + 0.1]}
             callouts={[
-              { label: 'SIMULATION, not live data', at: 5.0, until: 8.4, point: [230, 52], tint: color.sim },
-              { label: 'Drag the timeline', at: 8.8, until: WARNING - 0.1, point: [200, 1470], tint: color.sim },
+              { label: 'SIMULATION, not live data', at: 4.4, until: 7.9, point: [230, 52], tint: color.sim },
+              { label: 'Drag the timeline', at: 8.3, until: DANGER - 0.2, point: [200, 1470], tint: color.sim },
               { label: 'Hurricane Helene: real archived data', at: helene + 0.5, until: helene + 4.0, point: [230, 52], tint: color.sim },
               { label: 'Every reason, with its source', at: helene + 4.6, until: helene + 8.6, point: [330, 700], tint: color.danger },
             ]}
@@ -133,7 +138,7 @@ export const HighWater: React.FC<{ name: string }> = ({ name }) => {
         </Series.Sequence>
         <Series.Sequence name="How it works" durationInFrames={frames('how')}>
           <Stage glow={[{ t: 0, v: GLOW.calm }]} rain={[{ t: 0, v: 0.15 }]} />
-          <HowItWorks confirmAt={pieceAt('how', 1)} />
+          <HowItWorks confirmAt={pieceAt('how', 0) + 0.3} />
         </Series.Sequence>
         <Series.Sequence name="Built with" durationInFrames={frames('built')}>
           <Stage glow={[{ t: 0, v: GLOW.calm }]} />
@@ -141,7 +146,7 @@ export const HighWater: React.FC<{ name: string }> = ({ name }) => {
         </Series.Sequence>
         <Series.Sequence name="What I learned" durationInFrames={frames('learned')}>
           <Stage glow={[{ t: 0, v: GLOW.normal }]} />
-          <Learned quoteAt={0.6} />
+          <Learned quoteAt={pieceAt('learned', 0) + 1.4} step={0.33} />
         </Series.Sequence>
         <Series.Sequence name="End card" durationInFrames={frames('end')}>
           <Stage glow={[{ t: 0, v: GLOW.calm }]} />
